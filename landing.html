@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Аюрведический Медицинский Ресет · Южная Индия · 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* ─── RESET & BASE ──────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+:root {
+  /* ── cream-beige base ── */
+  --ink:      #f5ede0;   /* page bg */
+  --ink-2:    #ede3d4;   /* alt section bg */
+  --ink-3:    #e4d9c7;   /* deeper section bg */
+  --ink-4:    #d9ccb8;   /* border/rule fills */
+
+  /* ── typography ── */
+  --cream:    #2c1f0e;   /* body text */
+  --cream-2:  #4a3520;   /* secondary text */
+  --ivory:    #1a1008;   /* headings */
+
+  /* ── gold accent ── */
+  --gold:     #8c6b2e;
+  --gold-lt:  #a07c38;
+  --gold-dim: rgba(140,107,46,.12);
+  --line:     rgba(140,107,46,.22);
+  --line-2:   rgba(140,107,46,.1);
+
+  /* ── emerald contrast ── */
+  --em:       #152e1e;   /* deep emerald bg */
+  --em-2:     #1c3d28;   /* emerald card/panel */
+  --em-3:     #234831;   /* emerald hover */
+  --em-line:  rgba(200,164,90,.2);   /* gold on emerald border */
+  --em-gold:  #c8a45a;   /* gold on emerald text */
+  --em-text:  #d8ccb4;   /* body text on emerald */
+
+  --r: 'Cormorant Garamond', serif;
+  --s: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--s);
+  background: var(--ink);
+  color: var(--cream);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* parchment texture overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: -1;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── TYPOGRAPHY ────────────────────────────────────── */
+.serif { font-family: 'Cormorant Garamond', serif; }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 7vw, 96px);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: -.02em;
+  color: #f4ede0;
+  text-shadow: 0 2px 32px rgba(0,0,0,.45);
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(34px, 4vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--gold);
+  letter-spacing: -.01em;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+p {
+  color: var(--cream-2);
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.lead {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.5;
+}
+
+/* ─── DIVIDER ───────────────────────────────────────── */
+.rule {
+  display: flex; align-items: center; gap: 20px;
+  margin: 40px 0;
+}
+.rule::before, .rule::after {
+  content: ''; flex: 1; height: 1px; background: var(--line);
+}
+.rule-diamond {
+  width: 6px; height: 6px;
+  background: var(--gold); opacity: .6;
+  transform: rotate(45deg); flex-shrink: 0;
+}
+.rule-sm { margin: 24px 0; }
+.rule-sm::before, .rule-sm::after { max-width: 60px; flex: none; }
+
+hr.divider {
+  border: none; border-top: 1px solid var(--line);
+  margin: 60px 0;
+}
+
+/* ─── LAYOUT ────────────────────────────────────────── */
+.container { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
+.container-sm { max-width: 820px; margin: 0 auto; padding: 0 40px; }
+.section { padding: 120px 0; }
+.section-alt { background: var(--ink-2); }
+.section-dark { background: var(--ink-3); }
+/* ── emerald contrast sections ── */
+.section-em {
+  background: var(--em);
+}
+.section-em,
+.section-em p        { color: var(--em-text); }
+.section-em h2,
+.section-em h3,
+.section-em h4       { color: var(--em-gold); }
+.section-em .eyebrow { color: var(--em-gold); opacity: .75; }
+.section-em .rule::before,
+.section-em .rule::after   { background: var(--em-line); }
+.section-em .rule-diamond  { background: var(--em-gold); }
+/* full-width photo strip */
+.photo-strip {
+  width: 100%; height: 480px; overflow: hidden;
+  position: relative;
+}
+.photo-strip img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+}
+.photo-strip-caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 24px 40px;
+  background: linear-gradient(to top, rgba(21,46,30,.85), transparent);
+  font-size: 11px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--em-gold); font-weight: 500;
+}
+/* side photo inset */
+.side-photo { overflow: hidden; }
+.side-photo img { width: 100%; height: 100%; object-fit: cover; min-height: 320px; }
+
+/* ─── NAV ───────────────────────────────────────────── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 48px;
+  background: rgba(245,237,224,.97);
+  border-bottom: 1px solid rgba(140,107,46,.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: box-shadow .4s;
+}
+.nav.scrolled { box-shadow: 0 2px 24px rgba(44,31,14,.08); }
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 400;
+  color: var(--gold); letter-spacing: .04em;
+}
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--cream); font-weight: 400;
+  transition: opacity .2s, color .2s;
+}
+.nav-links a:hover { opacity: 1; color: var(--gold); }
+.nav-cta {
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 10px 26px;
+  font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ink); font-weight: 500;
+  transition: background .2s, color .2s;
+}
+.nav-cta:hover { background: var(--gold-lt); border-color: var(--gold-lt); opacity: 1; }
+
+/* ─── HERO ──────────────────────────────────────────── */
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: flex-end;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center 40%;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to right, rgba(8,15,10,.72) 0%, rgba(8,15,10,.3) 55%, rgba(8,15,10,.1) 100%),
+    linear-gradient(to bottom, rgba(8,15,10,.2) 0%, rgba(8,15,10,.0) 50%, rgba(245,237,224,.9) 88%, rgba(245,237,224,1) 100%);
+}
+.hero-content {
+  position: relative; z-index: 10;
+  padding: 0 80px 100px;
+  max-width: 1200px; width: 100%;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid rgba(200,164,90,.55);
+  padding: 8px 20px;
+  margin-bottom: 32px;
+  background: rgba(8,15,10,.3);
+  backdrop-filter: blur(4px);
+}
+.hero-badge span {
+  font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: #c8a45a; font-weight: 500;
+  text-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+.hero-badge::before {
+  content: ''; width: 4px; height: 4px;
+  background: #c8a45a; border-radius: 50%;
+}
+.hero h1 { margin-bottom: 24px; text-shadow: 0 2px 40px rgba(0,0,0,.5); }
+.hero .lead { max-width: 600px; margin-bottom: 48px; }
+.hero-stats {
+  display: flex; gap: 0; border: 1px solid rgba(200,164,90,.3);
+  max-width: 620px;
+  backdrop-filter: blur(8px);
+}
+.hero-stat {
+  flex: 1; padding: 20px 24px; border-right: 1px solid var(--line);
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 300; color: #dfc07e;
+  display: block; line-height: 1;
+}
+.hero-stat-label {
+  font-size: 10px; letter-spacing: .15em; text-transform: uppercase;
+  color: #c8bda8; margin-top: 8px; display: block; line-height: 1.4;
+}
+
+/* ─── CONCEPT SECTION ───────────────────────────────── */
+.concept-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; border: 1px solid var(--line);
+}
+.concept-text { padding: 80px 64px; }
+.concept-img { overflow: hidden; min-height: 520px; }
+.concept-img img { width: 100%; height: 100%; object-fit: cover; }
+.concept-tags { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
+.concept-tag {
+  border: 1px solid var(--line); padding: 6px 16px;
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); font-weight: 400;
+}
+
+/* ─── PILLARS ───────────────────────────────────────── */
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
+.pillar {
+  background: var(--ink-2); padding: 56px 40px;
+  position: relative; border: 1px solid var(--line-2);
+}
+.pillar::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; width: 40px; height: 2px;
+  background: var(--gold); opacity: .7;
+}
+.pillar-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px; font-weight: 300;
+  color: var(--gold); opacity: .12; line-height: 1;
+  position: absolute; top: 24px; right: 32px;
+}
+
+/* ─── UNIQUE ADVANTAGE ──────────────────────────────── */
+.vs-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 40px; align-items: start;
+}
+.vs-old {
+  background: var(--ink-3); border: 1px solid var(--line-2);
+  padding: 48px 40px; opacity: .8;
+}
+.vs-new {
+  background: var(--ink-2); border: 1px solid var(--line);
+  padding: 48px 40px;
+  position: relative;
+}
+.vs-new::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.vs-label {
+  font-size: 9px; letter-spacing: .25em; text-transform: uppercase;
+  font-weight: 500; margin-bottom: 20px; display: block;
+}
+.vs-bullet {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 14px 0; border-bottom: 1px solid var(--line-2);
+}
+.vs-bullet:last-child { border-bottom: none; }
+.vs-bullet-dot {
+  width: 4px; height: 4px; border-radius: 50%; background: var(--gold);
+  flex-shrink: 0; margin-top: 9px;
+}
+
+/* ─── DAY RHYTHM ────────────────────────────────────── */
+.day-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+}
+.timeline { position: relative; }
+.timeline::before {
+  content: ''; position: absolute;
+  left: 11px; top: 12px; bottom: 0; width: 1px;
+  background: var(--line);
+}
+.tl-item { display: flex; gap: 28px; padding-bottom: 40px; position: relative; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot {
+  width: 23px; height: 23px; border: 1px solid var(--gold);
+  border-radius: 50%; flex-shrink: 0; position: relative;
+  background: var(--ink-2); margin-top: 2px;
+}
+.tl-dot::after {
+  content: ''; position: absolute; inset: 6px;
+  background: var(--gold); border-radius: 50%;
+}
+.tl-body {}
+.tl-time {
+  font-size: 9px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500; display: block; margin-bottom: 4px;
+}
+.tl-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 400; color: var(--cream);
+  margin-bottom: 4px;
+}
+
+/* ─── THERAPIES ─────────────────────────────────────── */
+.therapy-list { border-top: 1px solid var(--line); }
+.therapy-item {
+  display: grid; grid-template-columns: 200px 1fr;
+  gap: 40px; padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+.therapy-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 400; color: var(--gold-lt);
+  padding-top: 2px;
+}
+.therapy-highlight {
+  background: var(--ink-3); border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  padding: 28px 32px; margin-top: 40px;
+}
+.therapy-highlight p { color: var(--cream); }
+
+/* ─── PHOTO MOSAIC ──────────────────────────────────── */
+.mosaic {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 340px 340px;
+  gap: 2px;
+}
+.mosaic-item { overflow: hidden; }
+.mosaic-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.mosaic-item:hover img { transform: scale(1.04); }
+.mosaic-item.tall { grid-row: 1 / 3; }
+.mosaic-item.wide { grid-column: 1 / 3; }
+
+/* ─── RESULTS ───────────────────────────────────────── */
+.results-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+  background: var(--line); border: 1px solid var(--line);
+}
+.result-item {
+  background: var(--ink-2); padding: 44px 40px;
+  display: flex; gap: 24px; align-items: flex-start;
+}
+.result-item h4 { color: var(--gold); font-size: 22px; }
+.result-item p { color: var(--cream); font-size: 15px; opacity: .85; }
+.result-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px; font-weight: 300;
+  color: var(--gold); opacity: .35; line-height: 1; flex-shrink: 0;
+}
+
+/* ─── PROTOCOL ──────────────────────────────────────── */
+.protocol-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--line); }
+.protocol-item { background: var(--ink); padding: 56px 48px; border: 1px solid var(--line-2); }
+.protocol-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-style: italic;
+  color: var(--cream); opacity: .9;
+  border-left: 2px solid var(--gold);
+  padding-left: 20px; margin: 24px 0;
+}
+
+/* ─── PRICE ─────────────────────────────────────────── */
+.price-section {
+  background: var(--ink-2);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.price-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.price-left { padding: 80px 64px; border-right: 1px solid var(--line); }
+.price-right { padding: 80px 64px; }
+.big-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px; font-weight: 300; color: var(--gold-lt); line-height: 1;
+  display: block;
+}
+.price-note {
+  font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--cream-2); opacity: .5; margin-top: 8px; display: block;
+}
+.include-list { list-style: none; margin-top: 32px; }
+.include-item {
+  padding: 13px 0 13px 28px; border-bottom: 1px solid var(--line-2);
+  position: relative; font-size: 14px; color: var(--cream-2);
+}
+.include-item:last-child { border-bottom: none; }
+.include-item::before {
+  content: ''; position: absolute; left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 14px; height: 14px; border: 1px solid var(--gold);
+  border-radius: 50%;
+}
+.include-item::after {
+  content: ''; position: absolute; left: 4px; top: 50%;
+  transform: translateY(-50%);
+  width: 6px; height: 6px; background: var(--gold);
+  border-radius: 50%;
+}
+.exclude-list { list-style: none; margin-top: 12px; }
+.exclude-item {
+  padding: 11px 0 11px 20px;
+  border-bottom: 1px solid var(--line-2);
+  position: relative; font-size: 14px; color: var(--cream-2); opacity: .5;
+}
+.exclude-item:last-child { border-bottom: none; }
+.exclude-item::before {
+  content: '—'; position: absolute; left: 0;
+  color: var(--cream-2);
+}
+
+/* ─── BOOKING STEPS ─────────────────────────────────── */
+.booking-steps {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 0; border: 1px solid var(--line);
+}
+.booking-step { padding: 48px 36px; border-right: 1px solid var(--line); position: relative; background: var(--ink); }
+.booking-step:last-child { border-right: none; }
+.step-idx {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px; font-weight: 300;
+  color: var(--gold); opacity: .4; line-height: 1; margin-bottom: 16px;
+}
+.step-pct {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px; font-weight: 300; color: var(--gold);
+  line-height: 1; margin-bottom: 8px;
+}
+.step-when {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--cream-2); display: block; margin-bottom: 12px;
+}
+.step-arrow {
+  position: absolute; right: -13px; top: 50%;
+  transform: translateY(-50%);
+  width: 26px; height: 26px; background: var(--ink);
+  border: 1px solid var(--line); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2;
+}
+.step-arrow svg { width: 10px; height: 10px; }
+
+/* ─── CANCELLATION ──────────────────────────────────── */
+.cancel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--line); margin-top: 40px; }
+.cancel-item { background: var(--ink-2); padding: 40px 36px; }
+
+/* ─── CONTACT / CTA ─────────────────────────────────── */
+.contact-section {
+  background: var(--ink-2);
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.cta-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 300; font-style: italic;
+  color: var(--ivory); line-height: 1.2;
+  max-width: 800px; margin: 0 auto 16px;
+}
+.cta-sub {
+  font-size: 14px; color: var(--cream-2); opacity: .75;
+  max-width: 520px; margin: 0 auto 40px; line-height: 1.7;
+}
+
+/* ─── CTA BUTTONS ────────────────────────────────────── */
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cta-separator {
+  width: 1px; height: 48px; background: var(--line); flex-shrink: 0;
+}
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px; font-weight: 500;
+  letter-spacing: .2em; text-transform: uppercase;
+  transition: all .25s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.cta-btn-primary {
+  background: var(--gold);
+  color: var(--ivory);
+  border: 1px solid var(--gold);
+}
+.cta-btn-primary:hover {
+  background: var(--gold-lt);
+  border-color: var(--gold-lt);
+}
+.cta-btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--line);
+}
+.cta-btn-outline:hover {
+  border-color: var(--gold);
+  background: var(--ink-3);
+}
+.cta-btn-whatsapp {
+  background: #3a6644;
+  color: #e8f0e0;
+  border: 1px solid rgba(80,140,90,.35);
+}
+.cta-btn-whatsapp:hover {
+  background: #4a7a54;
+}
+.cta-btn svg { flex-shrink: 0; opacity: .85; }
+
+/* ─── EMAIL FORM ─────────────────────────────────────── */
+.email-form {
+  max-width: 640px;
+  margin: 56px auto 0;
+  padding: 48px;
+  background: var(--ink-3);
+  border: 1px solid var(--line);
+}
+.form-rule {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 28px;
+}
+.form-rule::before, .form-rule::after {
+  content: ''; flex: 1; height: 1px; background: var(--em-line);
+}
+.form-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+.form-field { display: flex; flex-direction: column; gap: 7px; }
+.form-label {
+  font-size: 9px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--em-gold); opacity: .6; font-weight: 500;
+}
+.form-input {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  color: var(--cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; font-weight: 300;
+  padding: 13px 16px;
+  outline: none;
+  transition: border-color .2s;
+  width: 100%;
+}
+.form-input::placeholder { color: var(--cream-2); opacity: .4; }
+.form-input:focus { border-color: var(--gold); }
+.form-textarea { resize: vertical; min-height: 110px; }
+@media (max-width: 900px) {
+  .form-row { grid-template-columns: 1fr; }
+  .email-form { padding: 32px 24px; margin: 40px 0 0; }
+}
+
+/* ─── FOOTER ────────────────────────────────────────── */
+footer {
+  background: var(--ink-3); border-top: 1px solid var(--line);
+  padding: 40px; text-align: center;
+}
+footer p {
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--cream-2); opacity: .75;
+}
+
+/* ─── SCROLL NAV ────────────────────────────────────── */
+.scroll-nav {
+  position: fixed; right: 28px; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 10px; z-index: 100;
+}
+.scroll-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  border: 1px solid var(--gold); opacity: .3;
+  transition: opacity .3s, transform .3s;
+  cursor: pointer; background: transparent;
+  outline: none;
+}
+.scroll-dot.active { opacity: 1; transform: scale(1.8); background: var(--gold); border-color: var(--gold); }
+
+/* ─── FADE-IN ANIMATION ─────────────────────────────── */
+.fade-up {
+  opacity: 0; transform: translateY(32px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up.d1 { transition-delay: .1s; }
+.fade-up.d2 { transition-delay: .2s; }
+.fade-up.d3 { transition-delay: .3s; }
+.fade-up.d4 { transition-delay: .4s; }
+.fade-up.d5 { transition-delay: .5s; }
+
+/* ─── MOBILE ────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .container, .container-sm { padding: 0 24px; }
+  .section { padding: 80px 0; }
+  .nav { padding: 18px 24px; }
+  .nav-links { display: none; }
+  .hero-content { padding: 0 24px 80px; }
+  h1 { font-size: 42px; }
+  h2 { font-size: 32px; }
+  .concept-grid, .vs-grid, .day-grid, .price-layout,
+  .protocol-grid, .cancel-grid { grid-template-columns: 1fr; }
+  #support .container > div { grid-template-columns: 1fr !important; }
+  .photo-strip { height: 260px; }
+  #therapies .container > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  #therapies .container > div[style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
+  #therapies .container > div[style*="grid-template-columns:auto"] { grid-template-columns: 1fr !important; }
+  .cta-buttons { flex-direction: column; align-items: stretch; }
+  .cta-separator { width: 48px; height: 1px; }
+  .cta-btn { justify-content: center; }
+  .concept-img { min-height: 280px; }
+  .pillars { grid-template-columns: 1fr; }
+  .therapy-item { grid-template-columns: 1fr; gap: 8px; }
+  .booking-steps { grid-template-columns: 1fr; }
+  .booking-step { border-right: none; border-bottom: 1px solid var(--line); }
+  .booking-step:last-child { border-bottom: none; }
+  .step-arrow { display: none; }
+  .results-grid { grid-template-columns: 1fr; }
+  .hero-stats { flex-wrap: wrap; }
+  .hero-stat { min-width: 50%; }
+  .mosaic { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .mosaic-item.tall { grid-row: auto; }
+  .price-left { border-right: none; border-bottom: 1px solid var(--line); }
+  .price-left, .price-right { padding: 48px 24px; }
+  .scroll-nav { display: none; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ══ SCROLL NAV ════════════════════════════════════ -->
+<nav class="scroll-nav" id="scrollNav" aria-label="Навигация по странице">
+  <button class="scroll-dot active" data-target="hero" title="Начало"></button>
+  <button class="scroll-dot" data-target="concept" title="Концепция"></button>
+  <button class="scroll-dot" data-target="advantage" title="Преимущество"></button>
+  <button class="scroll-dot" data-target="day" title="День"></button>
+  <button class="scroll-dot" data-target="therapies" title="Терапии"></button>
+  <button class="scroll-dot" data-target="nutrition" title="Питание"></button>
+  <button class="scroll-dot" data-target="results" title="Результаты"></button>
+  <button class="scroll-dot" data-target="price" title="Стоимость"></button>
+  <button class="scroll-dot" data-target="booking" title="Бронирование"></button>
+  <button class="scroll-dot" data-target="contact" title="Контакты"></button>
+</nav>
+
+<!-- ══ NAV ═══════════════════════════════════════════ -->
+<header class="nav" id="mainNav">
+  <span class="nav-logo serif">VIP Ayurvedic Reset</span>
+  <nav class="nav-links">
+    <a href="#concept">Концепция</a>
+    <a href="#therapies">Терапии</a>
+    <a href="#price">Стоимость</a>
+    <a href="#contact" class="nav-cta">Забронировать</a>
+  </nav>
+</header>
+
+<!-- ══ HERO ══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge fade-up"><span>Luxury Wellness · VIP-формат · Южная Индия</span></div>
+    <h1 class="fade-up d1">VIP Аюрведический<br>Медицинский Ресет</h1>
+    <p class="lead fade-up d2" style="color:#e8dcc8; text-shadow:0 1px 12px rgba(0,0,0,.4); max-width:580px;">
+      Аюрведа — медицина возрастом более 5&nbsp;000 лет.<br>
+      «Наука о жизни» в переводе с санскрита.<br>
+      Это не отдых — это путешествие, в котором тело исцеляется по-настоящему.
+    </p>
+    <div class="hero-stats fade-up d3">
+      <div class="hero-stat" style="background:rgba(8,15,10,.55); backdrop-filter:blur(10px);">
+        <span class="hero-stat-val serif" style="color:#dfc07e;">21</span>
+        <span class="hero-stat-label" style="color:#c8bda8;">День полного восстановления</span>
+      </div>
+      <div class="hero-stat" style="background:rgba(8,15,10,.55); backdrop-filter:blur(10px);">
+        <span class="hero-stat-val serif" style="color:#dfc07e;">03–24</span>
+        <span class="hero-stat-label" style="color:#c8bda8;">Август 2026</span>
+      </div>
+      <div class="hero-stat" style="background:rgba(8,15,10,.55); backdrop-filter:blur(10px);">
+        <span class="hero-stat-val serif" style="color:#dfc07e;">Тамил-Наду</span>
+        <span class="hero-stat-label" style="color:#c8bda8;">Южная Индия</span>
+      </div>
+      <div class="hero-stat" style="background:rgba(21,46,30,.7); backdrop-filter:blur(10px); border-left:2px solid #c8a45a;">
+        <span class="hero-stat-val serif" style="color:#c8a45a; font-size:22px;">3 500 €</span>
+        <span class="hero-stat-label" style="color:#d8ccb4;">до 15 июля · 4 300 € после</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONCEPT ═══════════════════════════════════════ -->
+<section class="section" id="concept">
+  <div class="container">
+    <div class="concept-grid fade-up">
+      <div class="concept-text">
+        <span class="eyebrow">Атмосфера и концепция</span>
+        <h2>Погружение<br>в место силы</h2>
+        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
+        <p style="margin-bottom:20px;">Аюрведа — древнейшая медицинская система человечества, которой более <strong style="color:var(--gold); font-weight:400;">5&nbsp;000 лет</strong>. В переводе с санскрита — «наука о жизни». Здесь лечат не симптом, а причину: восстанавливают баланс дош, очищают тело на клеточном уровне и возвращают природное состояние здоровья.</p>
+        <p>Клиника работает по строгим международным медицинским стандартам <strong style="color:var(--gold); font-weight:400;">NABH</strong> — это не SPA. Это подлинная терапевтическая медицина в окружении тропической природы Южной Индии.</p>
+        <div class="concept-tags">
+          <span class="concept-tag">NABH Certified</span>
+          <span class="concept-tag">Аутентичная аюрведа</span>
+          <span class="concept-tag">VIP-приватность</span>
+          <span class="concept-tag">Тропическая природа</span>
+        </div>
+      </div>
+      <div class="concept-img">
+        <img src="img/hero-ayurvedic.png" alt="Аюрведическая терапия широдхара" loading="lazy" style="object-position:center 20%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PILLARS ════════════════════════════════════════ -->
+<div class="container fade-up">
+  <div class="pillars">
+    <div class="pillar">
+      <span class="pillar-num">01</span>
+      <h3>Место силы</h3>
+      <p>Закрытое аюрведическое пространство среди тропической природы. Полное уединение и отсутствие суеты.</p>
+    </div>
+    <div class="pillar">
+      <span class="pillar-num">02</span>
+      <h3>Стандарты NABH</h3>
+      <p>Международные медицинские стандарты. Классическая аюрведа в её аутентичной терапевтической форме.</p>
+    </div>
+    <div class="pillar">
+      <span class="pillar-num">03</span>
+      <h3>Глубокая тишина</h3>
+      <p>Нервная система начинает восстанавливаться с первых дней. Никаких внешних стимулов.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ UNIQUE ADVANTAGE ══════════════════════════════ -->
+<section class="section section-alt" id="advantage">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+      <span class="eyebrow">Уникальное преимущество</span>
+      <h2>Синхронная терапия<br>6 специалистов</h2>
+    </div>
+    <div class="vs-grid fade-up">
+      <div class="vs-old">
+        <span class="vs-label" style="color:var(--cream-2); opacity:.5;">Обычный SPA-подход</span>
+        <h3 style="opacity:.5;">1 специалист</h3>
+        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
+        <p>Разрозненные техники. Локальное и частичное воздействие на тело. Эффект накапливается медленно.</p>
+      </div>
+      <div class="vs-new">
+        <span class="vs-label" style="color:var(--gold-lt);">Наша VIP-концепция</span>
+        <h3>6 мастеров одновременно</h3>
+        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
+        <div class="vs-bullet">
+          <div class="vs-bullet-dot"></div>
+          <p>Редкий формат телесной терапии — 6 специалистов работают с вами синхронно.</p>
+        </div>
+        <div class="vs-bullet">
+          <div class="vs-bullet-dot"></div>
+          <p>Тело прорабатывается целиком в один момент — без потери глубины воздействия.</p>
+        </div>
+        <div class="vs-bullet">
+          <div class="vs-bullet-dot"></div>
+          <p><strong style="color:var(--gold-lt); font-weight:400;">Результат:</strong> Быстрое, глубокое и равномерное восстановление за один сеанс. Эффект ощущается мгновенно.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FULL-WIDTH PHOTO: MASSAGE ═════════════════════ -->
+<div class="photo-strip fade-up">
+  <img src="img/therapy-massage.png" alt="Синхронная аюрведическая терапия">
+  <div class="photo-strip-caption">Синхронная терапия · 6 специалистов · Глубокое восстановление</div>
+</div>
+
+<!-- ══ DAY RHYTHM ═════════════════════════════════════ -->
+<section class="section" id="day">
+  <div class="container">
+    <div class="day-grid">
+      <div class="fade-up">
+        <span class="eyebrow">21-дневное погружение</span>
+        <h2>Ритм<br>Вашего Дня</h2>
+        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
+        <p>Каждый день выстроен как единый терапевтический процесс — от первого вдоха утром до медитации в тишине вечером. Всё подчинено одной задаче: возвращению тела к равновесию.</p>
+        <div style="margin-top:36px; overflow:hidden; border:1px solid var(--line);">
+          <img src="img/location-clinic.png" alt="Ретрит в тропиках" style="width:100%; height:260px; object-fit:cover; object-position:center 60%;" loading="lazy">
+        </div>
+      </div>
+      <div class="timeline fade-up d2">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-time">Раннее утро</span>
+            <div class="tl-title">Пробуждение</div>
+            <p style="font-size:14px;">Частные занятия йогой и дыхательные практики для запуска энергии.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-time">Утро</span>
+            <div class="tl-title">Внимание врача</div>
+            <p style="font-size:14px;">Ежедневный контроль и углублённая диагностика у персонального вайдьи.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-time">День</span>
+            <div class="tl-title">Глубокая терапия</div>
+            <p style="font-size:14px;">Индивидуальная система процедур и синхронный массаж (6 специалистов).</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-time">День</span>
+            <div class="tl-title">Аюрведическое питание</div>
+            <p style="font-size:14px;">Меню, подобранное строго под ваш тип конституции (Дошу).</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-time">Вечер</span>
+            <div class="tl-title">Интеграция</div>
+            <p style="font-size:14px;">Медитации для ментальной разгрузки. Абсолютная тишина.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THERAPIES ══════════════════════════════════════ -->
+<section class="section" id="therapies" style="padding-bottom:0;">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:72px;">
+      <span class="eyebrow">Фундаментальные методы</span>
+      <h2>Терапии программы</h2>
+      <div class="rule" style="max-width:320px; margin:24px auto 0;"><div class="rule-diamond"></div></div>
+    </div>
+
+    <!-- TWO-COL: photo left, therapies 1-4 right -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); margin-bottom:2px;" class="fade-up">
+      <div style="overflow:hidden; min-height:560px;">
+        <img src="img/therapy-shirodhara.png" alt="Широдхара — аюрведическая терапия" style="width:100%; height:100%; object-fit:cover; object-position:center 15%; display:block;">
+      </div>
+      <div style="padding:56px 48px; background:var(--em); display:flex; flex-direction:column; justify-content:center;">
+        <span style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--em-gold); margin-bottom:32px; display:block; opacity:.75;">Классические практики</span>
+
+        <div style="border-bottom:1px solid var(--em-line); padding-bottom:28px; margin-bottom:28px;">
+          <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:10px;">
+            <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--em-gold); opacity:.4; letter-spacing:.2em;">01</span>
+            <h4 style="font-size:22px; margin:0; color:var(--em-gold);">Абхьянга</h4>
+          </div>
+          <p style="font-size:14px; line-height:1.7; color:var(--em-text);">Глубокий масляный массаж всего тела тёплыми травяными маслами. Улучшает кровообращение, снимает стресс, выводит токсины.</p>
+        </div>
+
+        <div style="border-bottom:1px solid var(--em-line); padding-bottom:28px; margin-bottom:28px;">
+          <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:10px;">
+            <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--em-gold); opacity:.4; letter-spacing:.2em;">02</span>
+            <h4 style="font-size:22px; margin:0; color:var(--em-gold);">Широдхара</h4>
+          </div>
+          <p style="font-size:14px; line-height:1.7; color:var(--em-text);">Непрерывный поток тёплого масла на третий глаз. Растворяет тревогу, восстанавливает сон, возвращает внутреннюю тишину.</p>
+        </div>
+
+        <div style="border-bottom:1px solid var(--em-line); padding-bottom:28px; margin-bottom:28px;">
+          <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:10px;">
+            <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--em-gold); opacity:.4; letter-spacing:.2em;">03</span>
+            <h4 style="font-size:22px; margin:0; color:var(--em-gold);">Удвартана</h4>
+          </div>
+          <p style="font-size:14px; line-height:1.7; color:var(--em-text);">Травяной порошковый массаж-детокс. Разгоняет лимфу, сжигает застои, делает кожу живой и упругой.</p>
+        </div>
+
+        <div>
+          <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:10px;">
+            <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--em-gold); opacity:.4; letter-spacing:.2em;">04</span>
+            <h4 style="font-size:22px; margin:0; color:var(--em-gold);">Пижичил</h4>
+          </div>
+          <p style="font-size:14px; line-height:1.7; color:var(--em-text);">Ритмичный поток тёплых масел по всему телу. Мощная омолаживающая и антивоспалительная терапия.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW: 3 cards -->
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); margin-bottom:2px;" class="fade-up d1">
+      <div style="background:var(--ink-3); padding:40px 36px; border-top:2px solid var(--gold);">
+        <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:12px;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--gold); opacity:.5; letter-spacing:.2em;">05</span>
+          <h4 style="font-size:20px; margin:0;">Кизхи</h4>
+        </div>
+        <p style="font-size:14px;">Массаж горячими травяными мешочками. Снимает мышечные боли, воспаления, восстанавливает суставы.</p>
+      </div>
+      <div style="background:var(--ink-3); padding:40px 36px; border-top:2px solid var(--gold);">
+        <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:12px;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--gold); opacity:.5; letter-spacing:.2em;">06</span>
+          <h4 style="font-size:20px; margin:0;">Насья</h4>
+        </div>
+        <p style="font-size:14px;">Лечебные масла через нос. Очищает пазухи, проясняет ум, усиливает концентрацию и память.</p>
+      </div>
+      <div style="background:var(--ink-3); padding:40px 36px; border-top:2px solid var(--gold);">
+        <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:12px;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--gold); opacity:.5; letter-spacing:.2em;">07</span>
+          <h4 style="font-size:20px; margin:0;">Васти</h4>
+        </div>
+        <p style="font-size:14px;">Глубокая детоксикация кишечника. Восстанавливает баланс дош и обновляет все системы организма.</p>
+      </div>
+    </div>
+
+    <!-- PANCHAKARMA highlight -->
+    <div class="fade-up d2" style="background:var(--em); border-top:3px solid var(--em-gold); padding:48px 56px; display:grid; grid-template-columns:auto 1fr; gap:40px; align-items:center;">
+      <div style="text-align:center; width:56px;">
+        <span style="font-family:'Cormorant Garamond',serif; font-size:56px; font-weight:300; color:var(--em-gold); opacity:.4; line-height:1; display:block;">✦</span>
+      </div>
+      <div>
+        <span style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--em-gold); opacity:.75; display:block; margin-bottom:12px;">Ключевой метод</span>
+        <h3 style="font-size:28px; margin-bottom:12px; color:var(--em-gold);">Панчакарма</h3>
+        <p style="font-size:15px; max-width:680px; color:var(--em-text);">Комплексная система очищения организма, направленная на обновление всех систем тела на клеточном уровне. Объединяет все терапии в единый протокол под руководством персонального вайдьи.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ SUPPORT WHEEL ══════════════════════════════════ -->
+<section class="section section-em" id="support">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 420px; gap:80px; align-items:center;">
+      <div>
+        <div class="fade-up" style="margin-bottom:48px;">
+          <span class="eyebrow">Полное сопровождение</span>
+          <h2>Пять измерений<br>восстановления</h2>
+        </div>
+        <div style="border:1px solid var(--em-line);" class="fade-up">
+          <div style="padding:24px 32px; display:flex; gap:20px; align-items:flex-start; border-bottom:1px solid var(--em-line);">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--em-gold);opacity:.4;min-width:32px;line-height:1;">01</span>
+            <div><h3 style="font-size:18px;margin-bottom:4px;color:var(--em-gold);">Медицина</h3><p style="font-size:13px;color:var(--em-text);">Персональный вайдья и ежедневный контроль состояния.</p></div>
+          </div>
+          <div style="padding:24px 32px; display:flex; gap:20px; align-items:flex-start; border-bottom:1px solid var(--em-line);">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--em-gold);opacity:.4;min-width:32px;line-height:1;">02</span>
+            <div><h3 style="font-size:18px;margin-bottom:4px;color:var(--em-gold);">Ментальность</h3><p style="font-size:13px;color:var(--em-text);">Медитации и программы для глубокой разгрузки.</p></div>
+          </div>
+          <div style="padding:24px 32px; display:flex; gap:20px; align-items:flex-start; border-bottom:1px solid var(--em-line);">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--em-gold);opacity:.4;min-width:32px;line-height:1;">03</span>
+            <div><h3 style="font-size:18px;margin-bottom:4px;color:var(--em-gold);">Движение</h3><p style="font-size:13px;color:var(--em-text);">Частные занятия йогой в формате антистресс.</p></div>
+          </div>
+          <div style="padding:24px 32px; display:flex; gap:20px; align-items:flex-start; border-bottom:1px solid var(--em-line);">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--em-gold);opacity:.4;min-width:32px;line-height:1;">04</span>
+            <div><h3 style="font-size:18px;margin-bottom:4px;color:var(--em-gold);">Аналитика</h3><p style="font-size:13px;color:var(--em-text);">Углублённая диагностика в начале и итоге программы.</p></div>
+          </div>
+          <div style="padding:24px 32px; display:flex; gap:20px; align-items:flex-start;">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--em-gold);opacity:.4;min-width:32px;line-height:1;">05</span>
+            <div><h3 style="font-size:18px;margin-bottom:4px;color:var(--em-gold);">Фармакопея</h3><p style="font-size:13px;color:var(--em-text);">Индивидуальные лечебные масла и препараты.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="side-photo fade-up d2" style="height:620px;">
+        <img src="img/herbs-oils.png" alt="Аюрведические масла и травы" loading="lazy" style="height:100%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NUTRITION ══════════════════════════════════════ -->
+<section class="section section-dark" id="nutrition">
+  <div class="container">
+    <div class="concept-grid fade-up">
+      <div class="concept-img">
+        <img src="img/food-ayurvedic.png" alt="Аутентичное аюрведическое питание" loading="lazy">
+      </div>
+      <div class="concept-text">
+        <span class="eyebrow">Аутентичное питание</span>
+        <h2>Пища<br>как лекарство</h2>
+        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
+        <p class="lead" style="font-size:17px; margin-bottom:28px;">В клинике нет стандартного шведского стола. Ваше меню — часть терапии.</p>
+        <div style="margin-bottom:20px;">
+          <h4>Индивидуальность</h4>
+          <p>Строго аюрведическое питание, подобранное вашим врачом под ваш тип конституции.</p>
+        </div>
+        <div style="margin-bottom:20px; padding-top:20px; border-top:1px solid var(--line);">
+          <h4>Аутентичность</h4>
+          <p>Блюда с настоящими местными специями, которые активируют метаболизм и способствуют исцелению.</p>
+        </div>
+        <div style="padding-top:20px; border-top:1px solid var(--line);">
+          <h4>Чистота</h4>
+          <p>Полное исключение токсичных продуктов, сахара и стимуляторов для поддержания глубокого детокса.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FULL-WIDTH PHOTO: YOGA ════════════════════════ -->
+<div class="photo-strip fade-up">
+  <img src="img/yoga-morning.png" alt="Утренняя йога в ретрите">
+  <div class="photo-strip-caption">Утренняя практика · Пробуждение тела · Тропический рассвет</div>
+</div>
+
+<!-- ══ RESULTS ════════════════════════════════════════ -->
+<section class="section" id="results">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+      <span class="eyebrow">Результат VIP-программы</span>
+      <h2>Качественное изменение<br>состояния</h2>
+    </div>
+    <div class="results-grid fade-up">
+      <div class="result-item">
+        <span class="result-num">01</span>
+        <div>
+          <h4>Глубокая энергия</h4>
+          <p>Восстановление жизненных сил и ощущение внутренней мощи.</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="result-num">02</span>
+        <div>
+          <h4>Ясность ума</h4>
+          <p>Чёткость мышления и долгосрочная эмоциональная стабильность.</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="result-num">03</span>
+        <div>
+          <h4>Здоровый сон</h4>
+          <p>Естественная нормализация сна без медикаментов.</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="result-num">04</span>
+        <div>
+          <h4>Стресс-детокс</h4>
+          <p>Снижение хронического стресса и перезагрузка нервной системы.</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="result-num">05</span>
+        <div>
+          <h4>Лёгкость в теле</h4>
+          <p>Обновлённый метаболизм и коррекция лишнего веса без усилий.</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="result-num">06</span>
+        <div>
+          <h4>Гормональный баланс</h4>
+          <p>Естественное восстановление гормонального фона.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROTOCOL ═══════════════════════════════════════ -->
+<section class="section section-alt" id="protocol">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+      <span class="eyebrow">Важно знать</span>
+      <h2>Протокол погружения</h2>
+    </div>
+    <div class="protocol-grid fade-up">
+      <div class="protocol-item">
+        <h3>Почему экскурсий нет</h3>
+        <div class="protocol-quote">
+          «Лечебный тур строго не подразумевает экскурсий и развлечений.»
+        </div>
+        <p>Для максимального оздоровительного эффекта необходимо исключить все внешние стимулы. <strong style="color:var(--gold-lt); font-weight:400;">Ваш фокус — только на внутреннем исцелении.</strong></p>
+      </div>
+      <div class="protocol-item">
+        <h3>Рекомендации по одежде</h3>
+        <div style="margin:24px 0 20px; width:40px; height:1px; background:var(--gold); opacity:.4;"></div>
+        <p style="margin-bottom:16px;">Строгие наряды оставьте дома. Вам понадобится только свободная, комфортная одежда.</p>
+        <p>Предпочтение — натуральным дышащим тканям: <strong style="color:var(--gold-lt); font-weight:400;">хлопок, лён</strong>. Они не стесняют движений и поддерживают контакт тела с природой.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRICE ══════════════════════════════════════════ -->
+<section class="price-section" id="price">
+  <div class="container" style="padding-top:0; padding-bottom:0;">
+    <div class="price-layout">
+      <div class="price-left fade-up">
+        <span class="eyebrow">Инвестиция в здоровье</span>
+
+        <!-- Early bird -->
+        <div style="display:flex; align-items:flex-end; gap:16px; flex-wrap:wrap;">
+          <span class="big-price serif">3 500 €</span>
+          <div style="padding-bottom:14px;">
+            <span style="display:inline-block; background:var(--em-2); color:#9ab89a; font-size:9px; letter-spacing:.2em; text-transform:uppercase; padding:5px 12px; border:1px solid var(--em-line);">до 15 июля</span>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:14px; margin-top:10px; margin-bottom:4px;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:var(--cream-2); opacity:.45; text-decoration:line-through;">4 300 €</span>
+          <span style="font-size:11px; color:var(--cream-2); opacity:.4; letter-spacing:.1em;">после 15 июля</span>
+        </div>
+        <span class="price-note">21 день · 3 недели · Всё включено</span>
+        <div style="width:48px; height:1px; background:var(--gold); opacity:.4; margin:32px 0;"></div>
+        <ul class="include-list">
+          <span style="font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); opacity:.7; display:block; margin-bottom:12px;">Включено</span>
+          <li class="include-item">Проживание (индивидуальный номер)</li>
+          <li class="include-item">Ежедневные консультации врача и диагностика</li>
+          <li class="include-item">Все лечебные процедуры, масла и препараты</li>
+          <li class="include-item">Аюрведическое питание (3 раза в день)</li>
+          <li class="include-item">Ежедневная йога-антистресс</li>
+          <li class="include-item">Трансфер (а/п Коимбатур, встреча 10:00)</li>
+        </ul>
+      </div>
+      <div class="price-right fade-up d2">
+        <div class="side-photo" style="height:300px; margin-bottom:40px;">
+          <img src="img/villa-room.png" alt="VIP-номер в ретрите" loading="lazy" style="height:100%;">
+        </div>
+        <span class="eyebrow" style="opacity:.5; color:var(--cream-2);">Не входит в стоимость</span>
+        <ul class="exclude-list" style="margin-top:8px;">
+          <li class="exclude-item">Авиабилеты</li>
+          <li class="exclude-item">Чаевые массажистам (по желанию)</li>
+        </ul>
+        <div style="width:48px; height:1px; background:var(--line); margin:32px 0;"></div>
+        <span class="eyebrow">Место в туре</span>
+        <p style="color:var(--cream); margin-bottom:16px;">Количество мест строго ограничено для сохранения формата VIP-приватности.</p>
+        <a href="#contact" style="display:inline-block; border:1px solid var(--gold); padding:14px 36px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:500; transition:all .2s; font-family:var(--s);" onmouseover="this.style.background='#8c6b2e';this.style.color='#f5ede0'" onmouseout="this.style.background='transparent';this.style.color='#8c6b2e'">
+          Забронировать место
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOOKING STEPS ══════════════════════════════════ -->
+<section class="section" id="booking">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+      <span class="eyebrow">Условия оплаты</span>
+      <h2>Три шага<br>к бронированию</h2>
+    </div>
+    <div class="booking-steps fade-up">
+      <div class="booking-step">
+        <div class="step-idx serif">01</div>
+        <div class="step-pct serif">20%</div>
+        <span class="step-when">За 3 месяца до тура</span>
+        <p style="font-size:14px;">Бронирование места в программе.</p>
+        <div class="step-arrow">
+          <svg viewBox="0 0 10 10" fill="none">
+            <path d="M2 5h6M6 3l2 2-2 2" stroke="#c8a45a" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="booking-step">
+        <div class="step-idx serif">02</div>
+        <div class="step-pct serif">+30%</div>
+        <span class="step-when">За 2,5 месяца · Итого 50%</span>
+        <p style="font-size:14px;">Предоплата для подтверждения участия.</p>
+        <div class="step-arrow">
+          <svg viewBox="0 0 10 10" fill="none">
+            <path d="M2 5h6M6 3l2 2-2 2" stroke="#c8a45a" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="booking-step">
+        <div class="step-idx serif">03</div>
+        <div class="step-pct serif">+50%</div>
+        <span class="step-when">За 1 месяц · Итого 100%</span>
+        <p style="font-size:14px;">Полная оплата. Место подтверждено.</p>
+      </div>
+    </div>
+    <div class="cancel-grid fade-up">
+      <div class="cancel-item">
+        <span class="eyebrow">Условия отмены</span>
+        <p>При отказе от тура менее чем за 1 месяц и неоплате вторых 50%, сумма за бронирование не подлежит возврату.</p>
+      </div>
+      <div class="cancel-item">
+        <span class="eyebrow">Привилегии и лояльность</span>
+        <p>Информация о скидках за привлечение новых участников предоставляется персонально по запросу.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA / CONTACT ══════════════════════════════════ -->
+<section class="section contact-section" id="contact">
+  <div class="container-sm" style="text-align:center;">
+
+    <p class="cta-quote fade-up">«Аюрведа лечит не симптом — она возвращает тело к его природному равновесию.»</p>
+    <p class="cta-sub fade-up d1">Количество мест строго ограничено для сохранения формата VIP-приватности.<br>Напишите нам для бронирования или консультации.</p>
+
+    <div class="rule fade-up d2" style="max-width:480px; margin:0 auto 56px;"><div class="rule-diamond"></div></div>
+
+    <!-- BUTTON GRID -->
+    <div class="cta-buttons fade-up d3">
+
+      <!-- Олеся — WhatsApp -->
+      <a href="https://wa.me/31610194500" target="_blank" class="cta-btn cta-btn-whatsapp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.68.97.98-3.58-.23-.37A9.9 9.9 0 0 1 2.1 12 9.9 9.9 0 0 1 12 2.1 9.9 9.9 0 0 1 21.9 12a9.9 9.9 0 0 1-9.9 9.88zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.76.97-.94 1.17-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.57-.48-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.46s1.06 2.86 1.2 3.06c.15.2 2.08 3.18 5.05 4.46.7.3 1.25.49 1.68.62.7.22 1.34.19 1.84.12.56-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.34z" fill="currentColor"/></svg>
+        WhatsApp Олеся
+      </a>
+
+      <!-- Инна — Telegram -->
+      <a href="https://t.me/Inna_Legrand" target="_blank" class="cta-btn cta-btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21.5 3L2.5 10.5L9 12.5M21.5 3L15 21L9 12.5M21.5 3L9 12.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        Telegram Инна
+      </a>
+
+    </div>
+
+    <!-- EMAIL FORM -->
+    <form class="email-form fade-up d4" id="contactForm" onsubmit="handleForm(event)">
+      <div class="form-rule"><div class="rule-diamond" style="background:var(--em-gold);"></div></div>
+      <p style="font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--em-gold); opacity:.7; margin-bottom:28px;">Или напишите нам на email</p>
+      <div class="form-row">
+        <div class="form-field">
+          <label class="form-label">Ваше имя</label>
+          <input type="text" class="form-input" placeholder="Имя" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <div class="form-field" style="margin-top:14px;">
+        <label class="form-label">Сообщение</label>
+        <textarea class="form-input form-textarea" placeholder="Расскажите о себе или задайте вопрос..." required></textarea>
+      </div>
+      <div style="margin-top:20px; text-align:center;">
+        <button type="submit" class="cta-btn cta-btn-primary" style="cursor:pointer; border:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21.5 3L2.5 10.5L9 12.5M21.5 3L15 21L9 12.5M21.5 3L9 12.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          Отправить
+        </button>
+      </div>
+      <div id="formSuccess" style="display:none; margin-top:20px; font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--em-gold); text-align:center; font-style:italic;">
+        Спасибо — мы свяжемся с вами в ближайшее время ✦
+      </div>
+    </form>
+
+    <div style="margin-top:72px;">
+      <div style="width:1px; height:48px; background:var(--line); margin:0 auto 28px;"></div>
+      <p style="font-size:10px; letter-spacing:.25em; text-transform:uppercase; color:var(--cream-2); opacity:.65;">
+        VIP Ayurvedic Medical Reset · Tamil Nadu, South India · August 2026
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════ -->
+<footer>
+  <p style="margin-bottom:12px;">© 2026 VIP Ayurvedic Medical Reset</p>
+  <p style="margin-bottom:16px;">Your-Tao &nbsp;·&nbsp; KvK 81107722 &nbsp;·&nbsp; BTW NL003532508B27</p>
+
+  <nav style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px 24px; margin-bottom:16px;">
+    <a href="docs/privacy-policy.html" style="font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--cream-2); opacity:.65; text-decoration:none; transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.65">Политика конфиденциальности</a>
+    <a href="docs/personal-data-consent.html" style="font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--cream-2); opacity:.65; text-decoration:none; transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.65">Согласие на обработку ПД</a>
+    <a href="docs/mailing-consent.html" style="font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--cream-2); opacity:.65; text-decoration:none; transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.65">Согласие на рассылки</a>
+    <a href="docs/offer-agreement.html" style="font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--cream-2); opacity:.65; text-decoration:none; transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.65">Договор оферты</a>
+  </nav>
+
+  <p>hello@olessaspark.com</p>
+</footer>
+
+<!-- ══ SCRIPTS ════════════════════════════════════════ -->
+<script>
+  // Parallax hero bg
+  const heroBg = document.getElementById('heroBg');
+  heroBg.style.backgroundImage = "url('img/hero-retreat-wide.png')";
+
+  // no parallax — photo stays fixed
+
+  // Sticky nav
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-up');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }});
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  faders.forEach(f => io.observe(f));
+
+  // Scroll nav dots
+  const sections = ['hero','concept','advantage','day','therapies','nutrition','results','price','booking','contact'];
+  const dots = document.querySelectorAll('.scroll-dot');
+  const sectionEls = sections.map(id => document.getElementById(id)).filter(Boolean);
+
+  // Email form handler
+  function handleForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const [name, email] = form.querySelectorAll('input');
+    const msg = form.querySelector('textarea');
+    const mailto = `mailto:hello@olessaspark.com?subject=VIP Ayurvedic Reset — ${encodeURIComponent(name.value)}&body=${encodeURIComponent(msg.value + '\n\nОт: ' + name.value + '\nEmail: ' + email.value)}`;
+    window.location.href = mailto;
+    form.querySelectorAll('input, textarea').forEach(el => el.value = '');
+    document.getElementById('formSuccess').style.display = 'block';
+    setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 5000);
+  }
+  window.handleForm = handleForm;
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      sectionEls[i]?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  const dotObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const idx = sectionEls.indexOf(e.target);
+        if (idx > -1) {
+          dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        }
+      }
+    });
+  }, { threshold: 0.4 });
+  sectionEls.forEach(s => dotObserver.observe(s));
+</script>
+
+</body>
+</html>
