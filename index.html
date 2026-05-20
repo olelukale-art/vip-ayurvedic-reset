@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP Аюрведический Медицинский Ресет · Южная Индия · 2026</title>
+<title>Аюрведический Медицинский Ресет · Южная Индия · 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -317,36 +317,263 @@ hr.divider {
 }
 
 /* ─── UNIQUE ADVANTAGE ──────────────────────────────── */
-.vs-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 40px; align-items: start;
+.sync-section {
+  background: var(--em);
+  padding: 100px 0 80px;
+  position: relative; overflow: hidden;
 }
-.vs-old {
-  background: var(--ink-3); border: 1px solid var(--line-2);
-  padding: 48px 40px; opacity: .8;
+.sync-header {
+  text-align: center; position: relative; z-index: 2;
+  margin-bottom: 64px;
 }
-.vs-new {
-  background: var(--ink-2); border: 1px solid var(--line);
-  padding: 48px 40px;
+.sync-eyebrow {
+  font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--em-gold); font-weight: 500; opacity: .6;
+  display: block; margin-bottom: 20px;
+}
+.sync-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 8vw, 96px); font-weight: 300; line-height: .95;
+  color: var(--em-gold); letter-spacing: -.02em;
+}
+.sync-subline {
+  font-size: 13px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--em-gold); opacity: .45; margin-top: 16px;
+}
+
+/* body diagram + 6 dots */
+.sync-diagram {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; position: relative; z-index: 2;
+  margin-bottom: 64px;
+}
+.sync-diagram svg { width: min(560px, 90vw); height: auto; }
+
+/* comparison strip */
+.sync-compare {
+  display: grid; grid-template-columns: 1fr 2px 1fr;
+  max-width: 860px; margin: 0 auto;
+  border: 1px solid var(--em-line);
+  position: relative; z-index: 2;
+}
+.sync-col { padding: 44px 48px; }
+.sync-sep { background: var(--em-line); }
+.sync-col-label {
+  font-size: 9px; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--em-gold); font-weight: 500; opacity: .45;
+  display: block; margin-bottom: 20px;
+}
+.sync-col h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4vw, 44px); font-weight: 300; line-height: 1.05;
+  margin-bottom: 20px;
+}
+.sync-col.dim h3 { color: var(--em-text); opacity: .35; }
+.sync-col.bright h3 { color: var(--em-gold); }
+.sync-col.bright { background: rgba(200,164,90,.04); }
+.sync-bullet {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 12px 0; border-bottom: 1px solid var(--em-line);
+  font-size: 14px; color: var(--em-text); line-height: 1.6;
+}
+.sync-bullet:last-child { border-bottom: none; }
+.sync-bullet-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--em-gold); flex-shrink: 0; margin-top: 9px; opacity: .6;
+}
+
+/* ─── ONLY HERE STRIP ───────────────────────────────── */
+.only-here {
+  background: var(--em);
+  padding: 80px 0;
+}
+.only-here-header {
+  text-align: center; margin-bottom: 56px;
+}
+.only-here-eyebrow {
+  font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--em-gold); font-weight: 500; opacity: .75;
+  display: block; margin-bottom: 16px;
+}
+.only-here-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4vw, 42px); font-weight: 300;
+  color: var(--em-gold); line-height: 1.15;
+}
+.oh-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 0; border: 1px solid var(--em-line);
+}
+.oh-card {
+  padding: 48px 40px; border-right: 1px solid var(--em-line);
+  position: relative; overflow: hidden;
+}
+.oh-card:last-child { border-right: none; }
+.oh-card::after {
+  content: attr(data-n);
+  position: absolute; bottom: -16px; right: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 120px; font-weight: 300; line-height: 1;
+  color: var(--em-gold); opacity: .07;
+  pointer-events: none;
+}
+.oh-icon {
+  width: 40px; height: 40px; margin-bottom: 24px;
+  opacity: .65;
+}
+.oh-label {
+  font-size: 9px; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--em-gold); font-weight: 500;
+  display: block; margin-bottom: 12px; opacity: .6;
+}
+.oh-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 400;
+  color: var(--em-gold); margin-bottom: 16px; line-height: 1.2;
+}
+.oh-body {
+  font-size: 14px; color: var(--em-text);
+  line-height: 1.85; font-weight: 300;
+  opacity: .9;
+}
+.oh-accent {
+  display: block; margin-top: 22px;
+  padding-top: 18px; border-top: 1px solid var(--em-line);
+  font-size: 12px; letter-spacing: .12em;
+  color: var(--em-gold); opacity: .85;
+  border-top: 1px solid var(--em-line); padding-top: 14px;
+  width: 100%;
+}
+
+/* ─── DEMAND / SCARCITY STRIP ───────────────────────── */
+.demand-strip {
+  background: var(--ink-3);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+}
+.demand-strip-inner {
+  display: flex; align-items: stretch;
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 80px;
+}
+.demand-item {
+  flex: 1; padding: 40px 36px;
+  border-right: 1px solid var(--line);
+  display: flex; align-items: center; gap: 24px;
+}
+.demand-item:last-child { border-right: none; }
+.demand-icon {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 44px; font-weight: 300; color: var(--gold);
+  opacity: .45; line-height: 1; flex-shrink: 0;
+}
+.demand-text strong {
+  display: block; font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 400; color: var(--gold-lt);
+  margin-bottom: 4px;
+}
+.demand-text span {
+  font-size: 13px; color: var(--cream-2);
+  line-height: 1.5; font-weight: 300; opacity: .75;
+}
+
+/* ─── FOR WHOM ──────────────────────────────────────── */
+.fw-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--line);
+  border: 1px solid var(--line); margin-top: 56px;
+}
+.fw-item {
+  background: var(--ink-2); padding: 36px 28px;
   position: relative;
 }
-.vs-new::before {
+.fw-item::before {
   content: ''; position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--gold), transparent);
+  top: 0; left: 0; width: 32px; height: 2px;
+  background: var(--gold); opacity: .5;
 }
-.vs-label {
-  font-size: 9px; letter-spacing: .25em; text-transform: uppercase;
-  font-weight: 500; margin-bottom: 20px; display: block;
+.fw-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px; font-weight: 300; color: var(--gold);
+  opacity: .1; line-height: 1; position: absolute;
+  top: 16px; right: 20px;
 }
-.vs-bullet {
-  display: flex; gap: 16px; align-items: flex-start;
-  padding: 14px 0; border-bottom: 1px solid var(--line-2);
+.fw-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 400; color: var(--gold-lt);
+  margin-bottom: 8px; line-height: 1.2;
 }
-.vs-bullet:last-child { border-bottom: none; }
-.vs-bullet-dot {
-  width: 4px; height: 4px; border-radius: 50%; background: var(--gold);
-  flex-shrink: 0; margin-top: 9px;
+.fw-body { font-size: 13px; color: var(--cream-2); line-height: 1.65; }
+
+/* ─── TESTIMONIALS ──────────────────────────────────── */
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 28px; margin-top: 56px;
+}
+.testi-card {
+  background: var(--ink-2); border: 1px solid var(--line);
+  padding: 40px 36px; position: relative;
+}
+.testi-card::before {
+  content: '\201C';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 72px; font-weight: 300; line-height: 1;
+  color: var(--gold); opacity: .2;
+  position: absolute; top: 16px; left: 28px;
+}
+.testi-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px; font-style: italic; font-weight: 300;
+  color: var(--cream); line-height: 1.7; margin-bottom: 28px;
+  padding-top: 24px;
+}
+.testi-author {
+  display: flex; align-items: center; gap: 12px;
+  padding-top: 20px; border-top: 1px solid var(--line);
+}
+.testi-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); opacity: .5; flex-shrink: 0;
+}
+.testi-name {
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--gold-lt);
+}
+.testi-from {
+  font-size: 11px; color: var(--cream-2); opacity: .5;
+  letter-spacing: .08em;
+}
+
+/* ─── FAQ ───────────────────────────────────────────── */
+.faq-list { max-width: 820px; margin: 56px auto 0; }
+details.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+details.faq-item:first-child { border-top: 1px solid var(--line); }
+summary.faq-q {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 0; cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 400; color: var(--gold-lt);
+  list-style: none; gap: 20px;
+}
+summary.faq-q::-webkit-details-marker { display: none; }
+.faq-icon {
+  width: 20px; height: 20px; flex-shrink: 0;
+  border: 1px solid var(--line); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .3s;
+}
+.faq-icon::after {
+  content: '+'; font-size: 14px; color: var(--gold);
+  line-height: 1;
+}
+details[open] .faq-icon { transform: rotate(45deg); }
+.faq-a {
+  padding: 0 0 24px 0; font-size: 14px;
+  color: var(--cream-2); line-height: 1.8;
+  max-width: 680px;
 }
 
 /* ─── DAY RHYTHM ────────────────────────────────────── */
@@ -705,6 +932,15 @@ footer p {
   .price-left { border-right: none; border-bottom: 1px solid var(--line); }
   .price-left, .price-right { padding: 48px 24px; }
   .scroll-nav { display: none; }
+  .oh-grid { grid-template-columns: 1fr; }
+  .oh-card { border-right: none; border-bottom: 1px solid var(--em-line); }
+  .oh-card:last-child { border-bottom: none; }
+  .demand-strip-inner { flex-direction: column; gap: 0; padding: 0 24px; }
+  .demand-item { border-right: none; border-bottom: 1px solid var(--em-line); }
+  .demand-item:last-child { border-bottom: none; }
+  .fw-grid { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  #team .container > div[style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
 }
 
 </style>
@@ -716,10 +952,13 @@ footer p {
   <button class="scroll-dot active" data-target="hero" title="Начало"></button>
   <button class="scroll-dot" data-target="concept" title="Концепция"></button>
   <button class="scroll-dot" data-target="advantage" title="Преимущество"></button>
+  <button class="scroll-dot" data-target="forwhom" title="Для кого"></button>
   <button class="scroll-dot" data-target="day" title="День"></button>
   <button class="scroll-dot" data-target="therapies" title="Терапии"></button>
   <button class="scroll-dot" data-target="nutrition" title="Питание"></button>
   <button class="scroll-dot" data-target="results" title="Результаты"></button>
+  <button class="scroll-dot" data-target="testimonials" title="Отзывы"></button>
+  <button class="scroll-dot" data-target="faq" title="FAQ"></button>
   <button class="scroll-dot" data-target="price" title="Стоимость"></button>
   <button class="scroll-dot" data-target="booking" title="Бронирование"></button>
   <button class="scroll-dot" data-target="contact" title="Контакты"></button>
@@ -727,7 +966,7 @@ footer p {
 
 <!-- ══ NAV ═══════════════════════════════════════════ -->
 <header class="nav" id="mainNav">
-  <span class="nav-logo serif">VIP Ayurvedic Reset</span>
+  <span class="nav-logo serif">Ayurvedic Reset</span>
   <nav class="nav-links">
     <a href="#concept">Концепция</a>
     <a href="#therapies">Терапии</a>
@@ -741,8 +980,8 @@ footer p {
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-badge fade-up"><span>Luxury Wellness · VIP-формат · Южная Индия</span></div>
-    <h1 class="fade-up d1">VIP Аюрведический<br>Медицинский Ресет</h1>
+    <div class="hero-badge fade-up"><span>Luxury Wellness · Приватный формат · Южная Индия</span></div>
+    <h1 class="fade-up d1">Аюрведический<br>Медицинский Ресет</h1>
     <p class="lead fade-up d2" style="color:#e8dcc8; text-shadow:0 1px 12px rgba(0,0,0,.4); max-width:580px;">
       Аюрведа — медицина возрастом более 5&nbsp;000 лет.<br>
       «Наука о жизни» в переводе с санскрита.<br>
@@ -782,7 +1021,7 @@ footer p {
         <div class="concept-tags">
           <span class="concept-tag">NABH Certified</span>
           <span class="concept-tag">Аутентичная аюрведа</span>
-          <span class="concept-tag">VIP-приватность</span>
+          <span class="concept-tag">Приватный формат</span>
           <span class="concept-tag">Тропическая природа</span>
         </div>
       </div>
@@ -804,7 +1043,7 @@ footer p {
     <div class="pillar">
       <span class="pillar-num">02</span>
       <h3>Стандарты NABH</h3>
-      <p>Международные медицинские стандарты. Классическая аюрведа в её аутентичной терапевтической форме.</p>
+      <p>Государственная аккредитация Индии — эквивалент европейских JCI-стандартов. Присваивается только клиникам с подтверждённым медицинским протоколом. Это не SPA.</p>
     </div>
     <div class="pillar">
       <span class="pillar-num">03</span>
@@ -814,38 +1053,176 @@ footer p {
   </div>
 </div>
 
-<!-- ══ UNIQUE ADVANTAGE ══════════════════════════════ -->
-<section class="section section-alt" id="advantage">
+<!-- ══ MEDICAL TEAM ═══════════════════════════════════ -->
+<section class="section" id="team">
   <div class="container">
-    <div class="fade-up" style="text-align:center; margin-bottom:60px;">
-      <span class="eyebrow">Уникальное преимущество</span>
-      <h2>Синхронная терапия<br>6 специалистов</h2>
+    <div class="fade-up" style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Медицинская команда</span>
+      <h2>Врачи, которые<br>будут работать с вами</h2>
+      <p style="max-width:580px; margin:16px auto 0; font-size:15px; color:var(--cream-2); opacity:.7;">Клиника работает по принципу врачебного сопровождения — не spa-обслуживания. Каждый специалист — практикующий врач с академическим образованием.</p>
     </div>
-    <div class="vs-grid fade-up">
-      <div class="vs-old">
-        <span class="vs-label" style="color:var(--cream-2); opacity:.5;">Обычный SPA-подход</span>
-        <h3 style="opacity:.5;">1 специалист</h3>
-        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
-        <p>Разрозненные техники. Локальное и частичное воздействие на тело. Эффект накапливается медленно.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);" class="fade-up">
+
+      <div style="background:var(--ink-2); padding:40px 32px; position:relative;">
+        <div style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; opacity:.7;">Главный врач</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">BAMS + MD (Аюрведа)<br>20+ лет практики</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Специализация в Расашастре и аюрведической психотерапии. Ведёт каждого пациента лично от первого осмотра до завершения курса.</p>
       </div>
-      <div class="vs-new">
-        <span class="vs-label" style="color:var(--gold-lt);">Наша VIP-концепция</span>
-        <h3>6 мастеров одновременно</h3>
-        <div class="rule rule-sm"><div class="rule-diamond"></div></div>
-        <div class="vs-bullet">
-          <div class="vs-bullet-dot"></div>
-          <p>Редкий формат телесной терапии — 6 специалистов работают с вами синхронно.</p>
-        </div>
-        <div class="vs-bullet">
-          <div class="vs-bullet-dot"></div>
-          <p>Тело прорабатывается целиком в один момент — без потери глубины воздействия.</p>
-        </div>
-        <div class="vs-bullet">
-          <div class="vs-bullet-dot"></div>
-          <p><strong style="color:var(--gold-lt); font-weight:400;">Результат:</strong> Быстрое, глубокое и равномерное восстановление за один сеанс. Эффект ощущается мгновенно.</p>
-        </div>
+
+      <div style="background:var(--ink-2); padding:40px 32px; position:relative;">
+        <div style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; opacity:.7;">Международное признание</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">World Spa Awards<br>2019 & 2020</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Один из ведущих врачей клиники руководил оздоровительным центром, дважды признанным лучшим велнес-ретритом Индии по версии World Spa Awards.</p>
+      </div>
+
+      <div style="background:var(--ink-2); padding:40px 32px; position:relative;">
+        <div style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; opacity:.7;">NABH изнутри</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">13 лет<br>в клинике</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Старший врач лично выстраивал и возглавлял процесс получения аккредитации NABH. Он не просто работает по стандарту — он его создавал.</p>
+      </div>
+
+      <div style="background:var(--ink-2); padding:40px 32px; position:relative;">
+        <div style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; opacity:.7;">Семейная традиция</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">1500 лет<br>аюрведической линии</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Консультирующий онколог клиники — представитель семейной традиции, передававшейся 60 поколениями. Ресурс-специалист Всеиндийского института аюрведы в Нью-Дели.</p>
+      </div>
+
+      <div style="background:var(--ink-2); padding:40px 32px; position:relative;">
+        <div style="font-size:9px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; opacity:.7;">Йога как медицина</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">RYT 200 +<br>врач BAMS</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Инструктор по йоге — одновременно дипломированный аюрведический врач. Утренние занятия адаптированы под терапевтический протокол, а не под групповой фитнес.</p>
+      </div>
+
+      <div style="background:var(--ink-3); padding:40px 32px; position:relative; display:flex; flex-direction:column; justify-content:center;">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:44px; font-weight:300; color:var(--gold); opacity:.15; position:absolute; top:16px; right:20px; line-height:1;">14</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--gold-lt); margin-bottom:12px; line-height:1.2;">14 врачей<br>в постоянном штате</div>
+        <p style="font-size:13px; color:var(--cream-2); line-height:1.75;">Каждый из них — практикующий аюрведический врач с BAMS или MD. Это не массажный центр с одним дежурным специалистом.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ UNIQUE ADVANTAGE ══════════════════════════════ -->
+<section class="sync-section fade-up" id="advantage">
+
+  <!-- giant ghost number -->
+
+  <div class="container" style="position:relative; z-index:2;">
+
+    <!-- header -->
+    <div class="sync-header fade-up">
+      <span class="sync-eyebrow">Наша VIP-концепция · Встречается в единичных клиниках мира</span>
+      <h2 class="sync-headline">Шесть мастеров.<br>Одно тело.<br>Один момент.</h2>
+      <p class="sync-subline">Синхронная аюрведическая терапия</p>
+    </div>
+
+    <!-- body diagram — AI-generated complete image -->
+    <div class="sync-diagram fade-up">
+      <img src="img/diagram-complete.png?v=2" alt="Синхронная терапия 6 мастеров — зоны воздействия" style="width:min(640px,92vw); display:block; margin:0 auto;">
+      <!-- SVG kept for fallback structure but hidden -->
+      <svg viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <defs>
+          <!-- gradient lines: fade from circle inward to body -->
+          <linearGradient id="gl" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c8a45a" stop-opacity=".75"/>
+            <stop offset="100%" stop-color="#c8a45a" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="gr" x1="100%" y1="0%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#c8a45a" stop-opacity=".75"/>
+            <stop offset="100%" stop-color="#c8a45a" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="gt" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#c8a45a" stop-opacity=".75"/>
+            <stop offset="100%" stop-color="#c8a45a" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="gbl" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c8a45a" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#c8a45a" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="gbr" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#c8a45a" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#c8a45a" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ── AI-GENERATED FEMININE SILHOUETTE — fills SVG ── -->
+        <image href="img/body-silhouette.png"
+          x="100" y="0" width="360" height="420"
+          opacity=".8" preserveAspectRatio="xMidYMid meet"/>
+
+        <!-- ── GRADIENT CONNECTING LINES ── -->
+        <!-- 1 head: short line above figure head -->
+        <line x1="280" y1="40" x2="280" y2="54" stroke="url(#gt)" stroke-width="1" stroke-dasharray="3 3"/>
+        <!-- 2 left arm -->
+        <line x1="194" y1="178" x2="222" y2="185" stroke="url(#gl)" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="222" cy="185" r="2.5" fill="#c8a45a" opacity=".5"/>
+        <!-- 3 right arm -->
+        <line x1="366" y1="178" x2="338" y2="185" stroke="url(#gr)" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="338" cy="185" r="2.5" fill="#c8a45a" opacity=".5"/>
+        <!-- 4 spine pulse rings on torso -->
+        <circle cx="280" cy="200" r="26" stroke="#c8a45a" stroke-width=".5" opacity=".2" stroke-dasharray="4 5"/>
+        <circle cx="280" cy="200" r="40" stroke="#c8a45a" stroke-width=".3" opacity=".1" stroke-dasharray="3 7"/>
+        <!-- 5 left leg -->
+        <line x1="214" y1="320" x2="252" y2="320" stroke="url(#gbl)" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="252" cy="320" r="2.5" fill="#c8a45a" opacity=".5"/>
+        <!-- 6 right leg -->
+        <line x1="346" y1="320" x2="308" y2="320" stroke="url(#gbr)" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="308" cy="320" r="2.5" fill="#c8a45a" opacity=".5"/>
+
+        <!-- ── 6 PRACTITIONER CIRCLES — repositioned to match AI figure ── -->
+        <!-- ① HEAD — above the figure's head -->
+        <circle cx="280" cy="20" r="19" stroke="#c8a45a" stroke-width="1.3" fill="rgba(200,164,90,.07)"/>
+        <text x="280" y="14" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".7">ГОЛОВА</text>
+        <text x="280" y="26" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="300">①</text>
+
+        <!-- ② LEFT ARM — beside left arm of figure -->
+        <circle cx="175" cy="178" r="19" stroke="#c8a45a" stroke-width="1.3" fill="rgba(200,164,90,.07)"/>
+        <text x="175" y="172" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".7">РУКИ</text>
+        <text x="175" y="185" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="300">②</text>
+
+        <!-- ③ RIGHT ARM -->
+        <circle cx="385" cy="178" r="19" stroke="#c8a45a" stroke-width="1.3" fill="rgba(200,164,90,.07)"/>
+        <text x="385" y="172" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".7">РУКИ</text>
+        <text x="385" y="185" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="300">③</text>
+
+        <!-- ④ SPINE — overlaid on torso centre -->
+        <circle cx="280" cy="200" r="20" stroke="#c8a45a" stroke-width="1.6" fill="rgba(200,164,90,.11)"/>
+        <text x="280" y="194" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".85">СПИНА</text>
+        <text x="280" y="208" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="400">④</text>
+
+        <!-- ⑤ LEFT LEG -->
+        <circle cx="196" cy="320" r="19" stroke="#c8a45a" stroke-width="1.3" fill="rgba(200,164,90,.07)"/>
+        <text x="196" y="314" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".7">НОГИ</text>
+        <text x="196" y="328" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="300">⑤</text>
+
+        <!-- ⑥ RIGHT LEG -->
+        <circle cx="364" cy="320" r="19" stroke="#c8a45a" stroke-width="1.3" fill="rgba(200,164,90,.07)"/>
+        <text x="364" y="314" text-anchor="middle" fill="#c8a45a" font-family="Montserrat,sans-serif" font-size="6.5" letter-spacing="1.2" opacity=".7">НОГИ</text>
+        <text x="364" y="328" text-anchor="middle" fill="#c8a45a" font-family="Cormorant Garamond,serif" font-size="14" font-weight="300">⑥</text>
+      </svg>
+    </div>
+
+    <!-- comparison -->
+    <div class="sync-compare fade-up">
+      <div class="sync-col dim">
+        <span class="sync-col-label">Стандартный подход</span>
+        <h3>1 специалист</h3>
+        <div class="sync-bullet"><div class="sync-bullet-dot"></div><span>Поочерёдная работа с разными зонами тела.</span></div>
+        <div class="sync-bullet"><div class="sync-bullet-dot"></div><span>Эффект локальный — глубина теряется при переходе.</span></div>
+        <div class="sync-bullet"><div class="sync-bullet-dot"></div><span>Типичный формат 99% аюрведических клиник мира.</span></div>
+      </div>
+      <div class="sync-sep"></div>
+      <div class="sync-col bright">
+        <span class="sync-col-label" style="opacity:.8;">Наша VIP-концепция</span>
+        <h3>6 мастеров<br>одновременно</h3>
+        <div class="sync-bullet"><div class="sync-bullet-dot" style="opacity:1; background:#c8a45a;"></div><span>Голова, плечи, спина, руки, ноги — всё тело в единый момент.</span></div>
+        <div class="sync-bullet"><div class="sync-bullet-dot" style="opacity:1; background:#c8a45a;"></div><span>Нервная система входит в состояние глубокого покоя уже во время первого сеанса.</span></div>
+        <div class="sync-bullet"><div class="sync-bullet-dot" style="opacity:1; background:#c8a45a;"></div><span style="color:#c8a45a; font-weight:400;">Эффект ощущается мгновенно — ничего похожего на обычный массаж.</span></div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -854,6 +1231,140 @@ footer p {
   <img src="img/therapy-massage.png" alt="Синхронная аюрведическая терапия">
   <div class="photo-strip-caption">Синхронная терапия · 6 специалистов · Глубокое восстановление</div>
 </div>
+
+<!-- ══ ONLY HERE ══════════════════════════════════════ -->
+<section class="only-here fade-up" id="unique">
+  <div class="container">
+    <div class="only-here-header">
+      <span class="only-here-eyebrow">Чего нет в других клиниках</span>
+      <h2 class="only-here-title" style="color:var(--em-gold);">Три вещи, которые делают<br>эту программу необычной</h2>
+    </div>
+    <div class="oh-grid">
+
+      <div class="oh-card" data-n="I">
+        <svg class="oh-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 36 Q10 26 10 18 Q10 10 20 6 Q30 10 30 18 Q30 26 20 36Z" stroke="#c8a45a" stroke-width="1" fill="none"/>
+          <path d="M20 6 L20 36" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <path d="M14 14 Q20 16 26 14" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <path d="M12 20 Q20 23 28 20" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <circle cx="20" cy="6" r="2" fill="#c8a45a" opacity=".5"/>
+        </svg>
+        <span class="oh-label">Собственные поля трав</span>
+        <div class="oh-title">Травы выращены<br>здесь же, на территории</div>
+        <p class="oh-body">Клиника выращивает лекарственные растения на собственных землях — без посредников и хранения. Травы собирают в нужный сезон и сразу используют в приготовлении масел и препаратов. Это принципиально отличает живую аюрведу от коммерческих spa-продуктов.</p>
+        <span class="oh-accent">Свежее сырьё · нулевая транспортная цепочка · максимальная терапевтическая сила</span>
+      </div>
+
+      <div class="oh-card" data-n="II">
+        <svg class="oh-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="20" cy="30" rx="10" ry="4" stroke="#c8a45a" stroke-width=".8" fill="none"/>
+          <path d="M10 30 L10 18 Q10 10 20 8 Q30 10 30 18 L30 30" stroke="#c8a45a" stroke-width="1" fill="none"/>
+          <path d="M15 22 Q20 20 25 22" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <path d="M14 26 Q20 24 26 26" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <circle cx="20" cy="8" r="2" fill="#c8a45a" opacity=".5"/>
+        </svg>
+        <span class="oh-label">Собственное производство масел</span>
+        <div class="oh-title">Масла варятся<br>по классическим рецептам</div>
+        <p class="oh-body">Все терапевтические масла готовятся непосредственно в клинике по традиционным аюрведическим рецептурам. Состав подбирается врачом индивидуально под вашу дошу и цели лечения. Ни одно коммерческое масло не может заменить этого — потому что оно сделано для вас.</p>
+        <span class="oh-accent">Индивидуальный состав · классические рецептуры · без промышленных добавок</span>
+      </div>
+
+      <div class="oh-card" data-n="III">
+        <svg class="oh-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="14" width="28" height="20" rx="2" stroke="#c8a45a" stroke-width="1" fill="none"/>
+          <path d="M12 14 Q12 8 20 7 Q28 8 28 14" stroke="#c8a45a" stroke-width=".8" fill="none"/>
+          <path d="M6 22 Q17 26 20 25 Q23 26 34 22" stroke="#c8a45a" stroke-width=".6" fill="none"/>
+          <circle cx="20" cy="25" r="2.5" stroke="#c8a45a" stroke-width=".7" fill="none"/>
+        </svg>
+        <span class="oh-label">Пижичил · масляная ванна</span>
+        <div class="oh-title">Вы буквально<br>погружаетесь в тёплое масло</div>
+        <p class="oh-body">Пижичил — это не массаж с маслом. Это терапия, при которой тёплое лечебное масло непрерывным потоком льётся на всё тело, пока специалисты мягко его распределяют. Тело буквально купается в масле. Эта процедура доступна только в клиниках с собственным производством — её невозможно воспроизвести с купленными маслами.</p>
+        <span class="oh-accent">Омоложение · противовоспалительный эффект · глубокое питание тканей</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEMAND STRIP ════════════════════════════════════ -->
+<div class="demand-strip fade-up">
+  <div class="demand-strip-inner">
+    <div class="demand-item">
+      <div class="demand-icon">30+</div>
+      <div class="demand-text">
+        <strong>Стран мира</strong>
+        <span>Гости приезжают из Европы, России, Латинской Америки и Азии. Многие возвращаются повторно.</span>
+      </div>
+    </div>
+    <div class="demand-item">
+      <div class="demand-icon" style="font-size:32px; opacity:.4;">3–6</div>
+      <div class="demand-text">
+        <strong>Месяцев бронирования вперёд</strong>
+        <span>Места занимаются задолго до начала. Приватный формат исключает большие группы.</span>
+      </div>
+    </div>
+    <div class="demand-item">
+      <div class="demand-icon" style="font-size:28px; opacity:.4;">VIP</div>
+      <div class="demand-text">
+        <strong>Эксклюзивный доступ</strong>
+        <span>Мы сопровождаем участников от первого контакта до возвращения домой. Клиника не работает с самостоятельными бронированиями.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOR WHOM ════════════════════════════════════════ -->
+<section class="section section-alt" id="forwhom">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Кому подойдёт программа</span>
+      <h2>Вы узнаете себя<br>в одном из этих состояний</h2>
+      <p style="max-width:620px; margin:20px auto 0; font-size:15px; color:var(--cream-2); opacity:.75;">Программа создана не для отдыха — она создана для людей, которым нужно настоящее восстановление.</p>
+    </div>
+    <div class="fw-grid fade-up">
+      <div class="fw-item">
+        <span class="fw-num">01</span>
+        <div class="fw-title">Хроническая усталость и выгорание</div>
+        <p class="fw-body">Вы давно не чувствуете себя отдохнувшей — даже после отпуска. Тело как будто работает в долг.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">02</span>
+        <div class="fw-title">Гормональные нарушения</div>
+        <p class="fw-body">Нестабильный цикл, перепады настроения, проблемы с весом без очевидной причины.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">03</span>
+        <div class="fw-title">Хронический стресс</div>
+        <p class="fw-body">Тревожность стала фоновым состоянием. Сложно остановиться, отключиться, побыть в тишине.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">04</span>
+        <div class="fw-title">Нарушение сна</div>
+        <p class="fw-body">Трудно заснуть, часто просыпаетесь, встаёте без ощущения отдыха. Сон перестал восстанавливать.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">05</span>
+        <div class="fw-title">Боли в суставах и спине</div>
+        <p class="fw-body">Хронические воспаления, напряжение в мышцах, ощущение тяжести в теле которое не проходит.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">06</span>
+        <div class="fw-title">Нарушение пищеварения и метаболизм</div>
+        <p class="fw-body">Вздутие, тяжесть, трудность с весом. Тело не усваивает питание так, как должно.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">07</span>
+        <div class="fw-title">Кожные проблемы</div>
+        <p class="fw-body">Воспаления, акне, экзема, псориаз — аюрведа рассматривает кожу как зеркало внутреннего дисбаланса.</p>
+      </div>
+      <div class="fw-item">
+        <span class="fw-num">08</span>
+        <div class="fw-title">Желание глубокой перезагрузки</div>
+        <p class="fw-body">Вы здоровы, но хотите ощутить себя в лучшей версии: ясность, энергия, гармония без таблеток.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ══ DAY RHYTHM ═════════════════════════════════════ -->
 <section class="section" id="day">
@@ -1083,7 +1594,7 @@ footer p {
 <section class="section" id="results">
   <div class="container">
     <div class="fade-up" style="text-align:center; margin-bottom:60px;">
-      <span class="eyebrow">Результат VIP-программы</span>
+      <span class="eyebrow">Результат программы</span>
       <h2>Качественное изменение<br>состояния</h2>
     </div>
     <div class="results-grid fade-up">
@@ -1133,6 +1644,49 @@ footer p {
   </div>
 </section>
 
+<!-- ══ TESTIMONIALS ════════════════════════════════════ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Голоса участниц</span>
+      <h2>Они уже прошли<br>этот путь</h2>
+      <p style="max-width:560px; margin:16px auto 0; font-size:14px; color:var(--cream-2); opacity:.6;">Имена изменены по просьбе участниц. Локация программы не раскрывается.</p>
+    </div>
+    <div class="testi-grid fade-up">
+      <div class="testi-card">
+        <p class="testi-text">Я ехала с хроническим воспалением суставов, которое не поддавалось ничему три года. На второй неделе боль начала отступать. К концу программы я забыла, что такое утренняя скованность. Это не чудо — это медицина, которой пять тысяч лет.</p>
+        <div class="testi-author">
+          <div class="testi-dot"></div>
+          <div>
+            <div class="testi-name">Наталья К.</div>
+            <div class="testi-from">Москва · август 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-text">После трёх лет выгорания я не верила, что что-то поможет. Первые пять дней было тяжело — тело детоксировалось. Потом что-то щёлкнуло. Я вернулась домой с такой энергией, которой у меня не было с двадцати лет. И это не эффект отпуска — он не прошёл спустя три месяца.</p>
+        <div class="testi-author">
+          <div class="testi-dot"></div>
+          <div>
+            <div class="testi-name">Ирина С.</div>
+            <div class="testi-from">Амстердам · октябрь 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-text">Гормональный сбой после сорока — я думала, это просто возраст. После программы мой врач не мог поверить анализам. Сон нормализовался уже на первой неделе. А масляная ванна — это ни с чем не сравнимое ощущение. Я вернусь в следующем году.</p>
+        <div class="testi-author">
+          <div class="testi-dot"></div>
+          <div>
+            <div class="testi-name">Елена М.</div>
+            <div class="testi-from">Берлин · март 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ PROTOCOL ═══════════════════════════════════════ -->
 <section class="section section-alt" id="protocol">
   <div class="container">
@@ -1154,6 +1708,67 @@ footer p {
         <p style="margin-bottom:16px;">Строгие наряды оставьте дома. Вам понадобится только свободная, комфортная одежда.</p>
         <p>Предпочтение — натуральным дышащим тканям: <strong style="color:var(--gold-lt); font-weight:400;">хлопок, лён</strong>. Они не стесняют движений и поддерживают контакт тела с природой.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Частые вопросы</span>
+      <h2>Ответы до того,<br>как вы спросите</h2>
+    </div>
+    <div class="faq-list fade-up">
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Панчакарма — это болезненно или некомфортно?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Нет. Большинство процедур — глубоко расслабляющие. Некоторые дни в середине курса могут ощущаться как усталость или лёгкое недомогание — это нормальная реакция детоксикации. Персональный вайдья отслеживает ваше состояние каждый день и корректирует протокол. Вы никогда не остаётесь один на один с процессом.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Нужно ли знать английский язык?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Базовый английский поможет, но не обязателен. Мы сопровождаем каждую участницу лично — помогаем с коммуникацией с врачом и персоналом, переводим рекомендации и назначения. Вы не остаётесь в языковой изоляции.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Можно ли работать удалённо во время программы?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Технически — да, интернет есть. Но мы настоятельно не рекомендуем. Терапевтический эффект Панчакармы напрямую зависит от глубины погружения. Рабочие звонки создают стресс, который буквально противодействует лечению. Большинство участниц берут полный информационный детокс — и называют это лучшим решением поездки.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Что происходит, если мне станет хуже в процессе?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Врач осматривает вас каждое утро. Клиника работает по стандартам NABH — это медицинский, а не spa-формат. При любом ухудшении протокол немедленно корректируется. За всё время работы серьёзных осложнений не было — именно потому что каждый шаг персонализирован.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Подходит ли программа при хронических заболеваниях?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Да — при многих состояниях аюрведа работает особенно эффективно: артрит, неврологические нарушения, метаболический синдром, кожные заболевания, хронический стресс. Перед программой мы собираем вашу медицинскую историю — вайдья изучает её заранее и составляет протокол под ваши задачи.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Как забронировать место и что происходит после?
+          <span class="faq-icon"></span>
+        </summary>
+        <p class="faq-a">Напишите нам в WhatsApp или Telegram — мы проведём короткий разговор, чтобы понять ваши цели и убедиться, что программа вам подходит. Затем вы вносите депозит 20% для подтверждения места. За несколько недель до вылета мы пришлём подробный гайд: что взять, как подготовить тело, чего ожидать в первые дни.</p>
+      </details>
+
     </div>
   </div>
 </section>
@@ -1190,7 +1805,7 @@ footer p {
       </div>
       <div class="price-right fade-up d2">
         <div class="side-photo" style="height:300px; margin-bottom:40px;">
-          <img src="img/villa-room.png" alt="VIP-номер в ретрите" loading="lazy" style="height:100%;">
+          <img src="img/villa-room.png" alt="Номер в ретрите" loading="lazy" style="height:100%;">
         </div>
         <span class="eyebrow" style="opacity:.5; color:var(--cream-2);">Не входит в стоимость</span>
         <ul class="exclude-list" style="margin-top:8px;">
@@ -1199,7 +1814,7 @@ footer p {
         </ul>
         <div style="width:48px; height:1px; background:var(--line); margin:32px 0;"></div>
         <span class="eyebrow">Место в туре</span>
-        <p style="color:var(--cream); margin-bottom:16px;">Количество мест строго ограничено для сохранения формата VIP-приватности.</p>
+        <p style="color:var(--cream); margin-bottom:16px;">Количество мест строго ограничено — максимум 10 участниц.</p>
         <a href="#contact" style="display:inline-block; border:1px solid var(--gold); padding:14px 36px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:500; transition:all .2s; font-family:var(--s);" onmouseover="this.style.background='#8c6b2e';this.style.color='#f5ede0'" onmouseout="this.style.background='transparent';this.style.color='#8c6b2e'">
           Забронировать место
         </a>
@@ -1263,7 +1878,12 @@ footer p {
   <div class="container-sm" style="text-align:center;">
 
     <p class="cta-quote fade-up">«Аюрведа лечит не симптом — она возвращает тело к его природному равновесию.»</p>
-    <p class="cta-sub fade-up d1">Количество мест строго ограничено для сохранения формата VIP-приватности.<br>Напишите нам для бронирования или консультации.</p>
+    <div class="fade-up d1" style="display:inline-flex; align-items:center; gap:10px; border:1px solid var(--em-line); padding:10px 24px; margin-bottom:20px; background:var(--em);">
+      <span style="width:8px; height:8px; border-radius:50%; background:#c8a45a; flex-shrink:0; animation:pulse 2s infinite;"></span>
+      <span style="font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--em-gold);">Осталось 4 места из 10</span>
+    </div>
+    <p class="cta-sub fade-up d1">Приватный формат — максимум 10 участниц одновременно.<br>Напишите нам для бронирования или консультации.</p>
+    <style>@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }</style>
 
     <div class="rule fade-up d2" style="max-width:480px; margin:0 auto 56px;"><div class="rule-diamond"></div></div>
 
@@ -1316,7 +1936,7 @@ footer p {
     <div style="margin-top:72px;">
       <div style="width:1px; height:48px; background:var(--line); margin:0 auto 28px;"></div>
       <p style="font-size:10px; letter-spacing:.25em; text-transform:uppercase; color:var(--cream-2); opacity:.65;">
-        VIP Ayurvedic Medical Reset · Tamil Nadu, South India · August 2026
+        Ayurvedic Medical Reset · Tamil Nadu, South India · August 2026
       </p>
     </div>
 
@@ -1325,7 +1945,7 @@ footer p {
 
 <!-- ══ FOOTER ═════════════════════════════════════════ -->
 <footer>
-  <p style="margin-bottom:12px;">© 2026 VIP Ayurvedic Medical Reset</p>
+  <p style="margin-bottom:12px;">© 2026 Ayurvedic Medical Reset</p>
   <p style="margin-bottom:16px;">Your-Tao &nbsp;·&nbsp; KvK 81107722 &nbsp;·&nbsp; BTW NL003532508B27</p>
 
   <nav style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px 24px; margin-bottom:16px;">
@@ -1370,7 +1990,7 @@ footer p {
     const form = e.target;
     const [name, email] = form.querySelectorAll('input');
     const msg = form.querySelector('textarea');
-    const mailto = `mailto:hello@olessaspark.com?subject=VIP Ayurvedic Reset — ${encodeURIComponent(name.value)}&body=${encodeURIComponent(msg.value + '\n\nОт: ' + name.value + '\nEmail: ' + email.value)}`;
+    const mailto = `mailto:hello@olessaspark.com?subject=Ayurvedic Reset — ${encodeURIComponent(name.value)}&body=${encodeURIComponent(msg.value + '\n\nОт: ' + name.value + '\nEmail: ' + email.value)}`;
     window.location.href = mailto;
     form.querySelectorAll('input, textarea').forEach(el => el.value = '');
     document.getElementById('formSuccess').style.display = 'block';
