@@ -315,7 +315,8 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 }
 .quiz-mail p{margin:0 0 10px;font-size:15.5px;opacity:1}
 .quiz-mail-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.quiz-mail input[type=email]{
+.quiz-mail input[type=email],
+.pack-mail input[type=email]{
   flex:1 1 200px;min-width:0;font-family:'Jost',sans-serif;font-size:16px;
   padding:12px 14px;border:1px solid var(--line);border-radius:2px;
   background:var(--bone);color:var(--ink);
@@ -328,6 +329,14 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 .quiz-mail-go:hover{background:var(--clay-deep)}
 .quiz-mail-copy{background:transparent;border:1px solid var(--line);color:var(--ink)}
 .quiz-mail-status{font-size:14px;color:var(--clay);margin-top:10px}
+.pack-mail{
+  margin:56px 0 24px;padding:28px 24px;
+  background:rgba(234,223,206,.45);border:1px solid var(--line);
+}
+.doc .pack-mail h2{
+  margin:0 0 10px;padding:0;border:none;font-size:28px;
+}
+.pack-mail .quiz-mail-row{margin-top:14px}
 @media(max-width:700px){
   .quiz{padding:20px 16px}
   .quiz-cols{grid-template-columns:1fr}
@@ -362,7 +371,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
   .doc{display:block !important}
   body{background:#fff}
   .quiz{background:transparent;break-inside:avoid}
-  .quiz-hint,.quiz-go,.quiz-actions,.quiz-mail{display:none}
+  .quiz-hint,.quiz-go,.quiz-actions,.quiz-mail,.pack-mail{display:none}
 }
 </style>
 </head>
@@ -624,7 +633,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>Ты познакомилась со всеми архетипами и исследовала базовые понятия женской энергии, а также основы работы с тенью. Прекрасно! Возможно, ты уже узнала о себе что-то новое — но, скажу тебе, самое интересное впереди.</p>
 <p>Теперь пора переходить к отдельным воркбукам по тем архетипам, с которыми ты решила работать. Тебя ждёт настоящее глубокое погружение с множеством упражнений для вдохновения и роста.</p>
 <p>Прежде чем продолжить, вспомни ещё раз намерение, которое ты поставила в начале. Пусть оно ведёт тебя через процесс.</p>
-<p>Наслаждайся путешествием!</p></article>
+<p>Наслаждайся путешествием!</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s1"><figure class="cover"><img src="img/arch-deva.png?v=gold" alt="Дева"></figure><h1>Архетип Девы · Воркбук</h1>
 <h2>Твой путь Девы: чего ожидать</h2>
 <p>Посмотри на себя — ты пришла ради себя! Прежде чем начать, дам обзор того, что тебя ждёт. Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -952,7 +961,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <hr>
 <h1>Глава 5. Ресурсы</h1>
 <p><strong>Рекомендуемое чтение для Девы:</strong></p>
-<ul><li>Штефани Шталь, «Ребёнок в тебе должен обрести дом»</li><li>Дон Мигель Руис, «Четыре соглашения»</li><li>Эмили Нагоски, «Как хочет женщина»</li><li>Бессел ван дер Колк, «Тело помнит всё»</li><li>Стюарт Браун и Кристофер Воган, «Play: How it Shapes the Brain, Opens the Imagination, and Invigorates the Soul»</li><li>Гленнон Дойл, «Нескромная»</li></ul></article>
+<ul><li>Штефани Шталь, «Ребёнок в тебе должен обрести дом»</li><li>Дон Мигель Руис, «Четыре соглашения»</li><li>Эмили Нагоски, «Как хочет женщина»</li><li>Бессел ван дер Колк, «Тело помнит всё»</li><li>Стюарт Браун и Кристофер Воган, «Play: How it Shapes the Brain, Opens the Imagination, and Invigorates the Soul»</li><li>Гленнон Дойл, «Нескромная»</li></ul><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s2"><figure class="cover"><img src="img/arch-ohotnica.png?v=gold" alt="Охотница"></figure><h1>Архетип Охотницы · Воркбук</h1>
 <h2>Твой путь Охотницы: чего ожидать</h2>
 <p>Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -1265,7 +1274,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <hr>
 <h1>Глава 5. Ресурсы</h1>
 <p><strong>Рекомендуемое чтение для Охотницы:</strong></p>
-<ul><li>Брене Браун, «Дары несовершенства» / «Daring Greatly»</li><li>Yung Pueblo, «Clarity &amp; Connection»</li><li>Микаэла Бём, «The Wild Woman&#x27;s Way»</li><li>Джин Шинода Болен, «Artemis: The Indomitable Spirit in Everywoman»</li><li>Брене Браун, «Braving the Wilderness»</li><li>Марк Брэкетт, «Permission to Feel»</li></ul></article>
+<ul><li>Брене Браун, «Дары несовершенства» / «Daring Greatly»</li><li>Yung Pueblo, «Clarity &amp; Connection»</li><li>Микаэла Бём, «The Wild Woman&#x27;s Way»</li><li>Джин Шинода Болен, «Artemis: The Indomitable Spirit in Everywoman»</li><li>Брене Браун, «Braving the Wilderness»</li><li>Марк Брэкетт, «Permission to Feel»</li></ul><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s3"><figure class="cover"><img src="img/arch-mat.png?v=gold" alt="Мать"></figure><h1>Архетип Матери · Воркбук</h1>
 <h2>Твой путь Матери: чего ожидать</h2>
 <p>Посмотри на себя — ты пришла ради себя! Прежде чем начать, дам обзор того, что тебя ждёт. Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -1683,7 +1692,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>От всего сердца благодарю тебя за то, что прошла этот путь со мной. За готовность делать работу. За то, что пришла ради себя. Нам нужно больше людей, которые отправляются в глубину себя, кто осмеливается смотреть на свою темноту с любовью, встречать свои страхи, принимать свои дары и мечтать масштабно. Я верю, что именно так мы делаем мир лучше.</p>
 <p>Всем ищущим правду, провидицам, миротворицам, любящим, мечтательницам и светоносицам — вы вдохновляете меня. И я надеюсь, что вы тоже вдохновляетесь потенциалом и сырой красотой внутри себя.</p>
 <p>Для меня было честью провести тебя через этот воркбук, и спасибо за твоё доверие. Задержись на минуту и поблагодари себя — всю работу сделала ты.</p>
-<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p></article>
+<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s4"><figure class="cover"><img src="img/arch-koroleva.png?v=gold" alt="Королева"></figure><h1>Архетип Королевы · Воркбук</h1>
 <h2>Твой путь Королевы: чего ожидать</h2>
 <p>Посмотри на себя — ты пришла ради себя! Прежде чем начать, дам обзор того, что тебя ждёт. Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -2076,7 +2085,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>От всего сердца благодарю тебя за то, что прошла этот путь со мной. За готовность делать работу. За то, что пришла ради себя. Нам нужно больше людей, которые отправляются в глубину себя, кто осмеливается смотреть на свою темноту с любовью, встречать свои страхи, принимать свои дары и мечтать масштабно. Я верю, что именно так мы делаем мир лучше.</p>
 <p>Всем ищущим правду, провидицам, миротворицам, любящим, мечтательницам и светоносицам — вы вдохновляете меня. И я надеюсь, что вы тоже вдохновляетесь потенциалом и сырой красотой внутри себя.</p>
 <p>Для меня было честью провести тебя через этот воркбук, и спасибо за твоё доверие. Задержись на минуту и поблагодари себя — всю работу сделала ты.</p>
-<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p></article>
+<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s5"><figure class="cover"><img src="img/arch-mistik.png?v=gold" alt="Мистик"></figure><h1>Архетип Мистика · Воркбук</h1>
 <h2>Твой путь Мистика: чего ожидать</h2>
 <p>Посмотри на себя — ты пришла ради себя! Прежде чем начать, дам обзор того, что тебя ждёт. Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -2476,7 +2485,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>От всего сердца благодарю тебя за то, что прошла этот путь со мной. За готовность делать работу. За то, что пришла ради себя. Нам нужно больше людей, которые отправляются в глубину себя, кто осмеливается смотреть на свою темноту с любовью, встречать свои страхи, принимать свои дары и мечтать масштабно. Я верю, что именно так мы делаем мир лучше.</p>
 <p>Всем ищущим правду, провидицам, миротворицам, любящим, мечтательницам и светоносицам — вы вдохновляете меня. И я надеюсь, что вы тоже вдохновляетесь потенциалом и сырой красотой внутри себя.</p>
 <p>Для меня было честью провести тебя через этот воркбук, и спасибо за твоё доверие. Задержись на минуту и поблагодари себя — всю работу сделала ты.</p>
-<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p></article>
+<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s6"><figure class="cover"><img src="img/arch-mudrec.png?v=gold" alt="Мудрец"></figure><h1>Архетип Мудреца · Воркбук</h1>
 <h2>Твой путь Мудреца: чего ожидать</h2>
 <p>Посмотри на себя — ты пришла ради себя! Прежде чем начать, дам обзор того, что тебя ждёт. Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -2864,7 +2873,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>От всего сердца благодарю тебя за то, что прошла этот путь со мной. За готовность делать работу. За то, что пришла ради себя. Нам нужно больше людей, которые отправляются в глубину себя, кто осмеливается смотреть на свою темноту с любовью, встречать свои страхи, принимать свои дары и мечтать масштабно. Я верю, что именно так мы делаем мир лучше.</p>
 <p>Всем ищущим правду, провидицам, миротворицам, любящим, мечтательницам и светоносицам — вы вдохновляете меня. И я надеюсь, что вы тоже вдохновляетесь потенциалом и сырой красотой внутри себя.</p>
 <p>Для меня было честью провести тебя через этот воркбук, и спасибо за твоё доверие. Задержись на минуту и поблагодари себя — всю работу сделала ты.</p>
-<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p></article>
+<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article>
 <article class="doc" id="s7"><figure class="cover"><img src="img/arch-lyubovnica.png?v=gold" alt="Любовница"></figure><h1>Архетип Любовницы · Воркбук</h1>
 <h2>Твой путь Любовницы: чего ожидать</h2>
 <p>Мы пройдём процесс из трёх шагов: от исследования сильных сторон через встречу с тенью к финальной интеграции и воплощению.</p>
@@ -3251,7 +3260,7 @@ p .journal-line{width:12em;display:inline-block;margin:0 6px;vertical-align:base
 <p>От всего сердца благодарю тебя за то, что прошла этот путь со мной. За готовность делать работу. За то, что пришла ради себя. Нам нужно больше людей, которые отправляются в глубину себя, кто осмеливается смотреть на свою темноту с любовью, встречать свои страхи, принимать свои дары и мечтать масштабно. Я верю, что именно так мы делаем мир лучше.</p>
 <p>Всем ищущим правду, провидицам, миротворицам, любящим, мечтательницам и светоносицам — вы вдохновляете меня. И я надеюсь, что вы тоже вдохновляетесь потенциалом и сырой красотой внутри себя.</p>
 <p>Для меня было честью провести тебя через этот воркбук, и спасибо за твоё доверие. Задержись на минуту и поблагодари себя — всю работу сделала ты.</p>
-<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p></article></div>
+<p>Тебя любят, и ты нужна. А теперь иди и покажи миру свой свет.</p><aside class="pack-mail"><h2>Отправить все ответы</h2><p>Результаты тестов и всё, что ты написала на этой странице — одним письмом.</p><div class="quiz-mail-row"><input type="email" class="pack-email" autocomplete="email" placeholder="ты@почта.com"><button type="button" class="quiz-mail-go pack-go">Открыть письмо</button><button type="button" class="quiz-mail-copy pack-copy">Скопировать</button></div><p class="quiz-mail-status pack-status" hidden></p></aside></article></div>
   </div>
 </section>
 
@@ -3409,30 +3418,27 @@ function hideQuizResult(form){
   const mail = form.querySelector('.quiz-mail');
   if (mail) mail.hidden = true;
 }
-function scoreQuiz(form){
+function scoreQuiz(form, opts){
   const k = form.dataset.kind;
   if (k === 'sum') scoreSum(form);
   else if (k === 'letters') scoreLetters(form);
   else scoreChecks(form);
+  if (opts && opts.silent) return;
   if (form.classList.contains('done')){
-    const mail = form.querySelector('.quiz-mail');
-    if (mail) mail.hidden = false;
     const el = form.querySelector('.quiz-score:not([hidden]), .quiz-letters:not([hidden])');
     if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
   }
 }
 (function initQuizzes(){
   const store = quizStore();
-  const savedMail = localStorage.getItem('lea-arch-mail') || '';
   document.querySelectorAll('form.quiz').forEach(form => {
     restoreQuiz(form, store[form.dataset.quiz]);
-    attachMailBox(form, savedMail);
     form.addEventListener('submit', e => {
       e.preventDefault();
       scoreQuiz(form);
     });
     form.addEventListener('change', e => {
-      if (e.target.closest('.quiz-mail')) return;
+      if (e.target.closest('.quiz-mail, .pack-mail')) return;
       persistQuiz(form);
       if (form.classList.contains('done')) hideQuizResult(form);
     });
@@ -3449,27 +3455,9 @@ const ARCH = {
   G: { name: 'Мудрец', line: 'Ясная, собранная. Дары — ум и мастерство. Трудность — застрять в голове и не дойти до сердца.' }
 };
 
-function attachMailBox(form, savedMail){
-  if (form.querySelector('.quiz-mail')) return;
-  const box = document.createElement('div');
-  box.className = 'quiz-mail';
-  box.hidden = true;
-  box.innerHTML = '<p>Прислать результат на почту — с описанием, не только цифрой.</p>'
-    + '<div class="quiz-mail-row">'
-    + '<input type="email" name="quiz-email" autocomplete="email" placeholder="ты@почта.com">'
-    + '<button type="button" class="quiz-mail-go">Открыть письмо</button>'
-    + '<button type="button" class="quiz-mail-copy">Скопировать</button>'
-    + '</div><p class="quiz-mail-status" hidden></p>';
-  form.appendChild(box);
-  const input = box.querySelector('input');
-  input.value = savedMail;
-  box.querySelector('.quiz-mail-go').addEventListener('click', () => sendQuizMail(form));
-  box.querySelector('.quiz-mail-copy').addEventListener('click', () => copyQuizMail(form));
-}
-
-function resultText(form){
+function resultText(form, pack){
   const title = (form.querySelector('h2')?.innerText || 'Тест').trim();
-  const lines = ['Семь ролей. Одна я.', '', title, ''];
+  const lines = pack ? [title, ''] : ['Семь ролей. Одна я.', '', title, ''];
   const kind = form.dataset.kind;
   if (kind === 'sum'){
     const score = form.querySelector('.quiz-score b')?.textContent || '';
@@ -3499,44 +3487,113 @@ function resultText(form){
     lines.push(score, '', band, '');
     if (extra) lines.push(extra.trim(), '');
   }
+  if (!pack){
+    lines.push('Это не диагноз и не приговор. Это зеркало: куда уже есть доступ, и куда хочется зайти глубже.');
+  }
+  return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+function journalLabel(el){
+  const row = el.closest('.journal-row');
+  if (row){
+    const span = row.querySelector('span');
+    if (span && span.innerText.trim()) return span.innerText.trim();
+  }
+  const lab = el.closest('label.journal-q') || (el.id && document.querySelector(`label[for="${el.id}"]`));
+  if (lab && lab.innerText.trim()) return lab.innerText.replace(/\s+/g, ' ').trim();
+  const prev = el.previousElementSibling;
+  if (prev && prev.innerText.trim()) return prev.innerText.replace(/\s+/g, ' ').trim();
+  const p = el.closest('p');
+  if (p){
+    const t = p.innerText.replace(/\s+/g, ' ').trim();
+    const v = (el.value || '').trim();
+    if (t && t !== v) return t;
+  }
+  const li = el.closest('li');
+  if (li && li.parentElement){
+    const list = li.parentElement;
+    const n = [...list.children].indexOf(li) + 1;
+    let probe = list.previousElementSibling;
+    while (probe && !probe.innerText.trim()) probe = probe.previousElementSibling;
+    const head = probe && /^(H[1-6]|P)$/.test(probe.tagName)
+      ? probe.innerText.replace(/\s+/g, ' ').trim()
+      : '';
+    if (head) return `${head} (${n})`;
+    return `Пункт ${n}`;
+  }
+  return 'Запись';
+}
+
+function packText(doc){
+  const title = (doc.querySelector('h1')?.innerText || 'Воркбук').trim();
+  const lines = ['Семь ролей. Одна я.', title, ''];
+  const quizzes = [...doc.querySelectorAll('form.quiz')];
+  if (quizzes.length){
+    lines.push('— Тесты —', '');
+    quizzes.forEach(form => {
+      scoreQuiz(form, {silent: true});
+      if (form.classList.contains('done')){
+        lines.push(resultText(form, true), '');
+      } else {
+        const t = (form.querySelector('h2')?.innerText || 'Тест').trim();
+        lines.push(t, 'Ещё не посчитан — отметь все пункты и нажми «Посчитать».', '');
+      }
+    });
+  }
+  const notes = [];
+  doc.querySelectorAll('[data-journal]').forEach(el => {
+    const v = (el.value || '').trim();
+    if (!v) return;
+    notes.push(journalLabel(el), v, '');
+  });
+  if (notes.length){
+    lines.push('— Записи —', '', ...notes);
+  }
+  if (!quizzes.length && !notes.length){
+    lines.push('На этой странице пока нет заполненных ответов.');
+  }
   lines.push('Это не диагноз и не приговор. Это зеркало: куда уже есть доступ, и куда хочется зайти глубже.');
   return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
-function mailStatus(form, text){
-  const el = form.querySelector('.quiz-mail-status');
+function packStatus(box, text){
+  const el = box.querySelector('.pack-status');
   if (!el) return;
   el.hidden = false;
   el.textContent = text;
 }
 
-function sendQuizMail(form){
-  const input = form.querySelector('.quiz-mail input');
+function sendPack(doc, box){
+  const input = box.querySelector('.pack-email');
   const email = (input?.value || '').trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    mailStatus(form, 'Напиши адрес почты — и нажми ещё раз.');
+    packStatus(box, 'Напиши адрес почты — и нажми ещё раз.');
     input?.focus();
     return;
   }
   localStorage.setItem('lea-arch-mail', email);
-  const title = (form.querySelector('h2')?.innerText || 'Тест').trim();
-  const body = resultText(form);
-  const subject = 'Семь ролей — ' + title.replace(/^Тест:\s*/i, '');
-  const href = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  if (href.length > 1800){
-    copyText(body);
-    window.location.href = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Полный результат скопирован. Вставь его в письмо (Cmd+V).\n\n' + body.slice(0, 900))}`;
-    mailStatus(form, 'Текст длинный: я скопировала его. В письме нажми Cmd+V, потом «Отправить».');
-    return;
-  }
+  const title = (doc.querySelector('h1')?.innerText || 'Воркбук').trim();
+  const body = packText(doc);
+  const subject = 'Семь ролей — ' + title;
+  copyText(body);
+  const href = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Полный текст скопирован. Вставь его в письмо (Cmd+V).\n\n' + body.slice(0, 700))}`;
   window.location.href = href;
-  mailStatus(form, 'Откроется почта с готовым текстом. Нажми «Отправить».');
+  packStatus(box, 'Текст скопирован. В письме нажми Cmd+V, потом «Отправить».');
 }
 
-function copyQuizMail(form){
-  copyText(resultText(form));
-  mailStatus(form, 'Текст результата скопирован. Можно вставить в письмо.');
-}
+(function initPackMail(){
+  const saved = localStorage.getItem('lea-arch-mail') || '';
+  document.querySelectorAll('.pack-mail').forEach(box => {
+    const doc = box.closest('.doc');
+    const input = box.querySelector('.pack-email');
+    if (input) input.value = saved;
+    box.querySelector('.pack-go')?.addEventListener('click', () => sendPack(doc, box));
+    box.querySelector('.pack-copy')?.addEventListener('click', () => {
+      copyText(packText(doc));
+      packStatus(box, 'Все ответы скопированы. Можно вставить в письмо.');
+    });
+  });
+})();
 
 function copyText(text){
   if (navigator.clipboard && navigator.clipboard.writeText){
